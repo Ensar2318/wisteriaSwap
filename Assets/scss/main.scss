@@ -4,17 +4,50 @@ $medium: 720px;
 $large: 960px;
 $xlarge: 1140px;
 $xxlarge: 1320px;
-// ColorS Variables!!
 
+// ColorS Variables!!
+$colorDefaultText: #303c3f;
+$colorLightBlackText: #7c7c7c;
+$colorNavbarGreen: #e1f7f4;
 
 // Fonts Variables
+@font-face {
+    font-family: cerapromedium;
+    src: url(/Assets/Fonts/cerapro/cerapromedium.otf);
+}
 
+@font-face {
+    font-family: khandregular;
+    src: url(/Assets/Fonts/khand/Khandr.ttf);
+}
+@font-face {
+    font-family: khandbold;
+    src: url(/Assets/Fonts/khand/Khandb.ttf);
+}
+@font-face {
+    font-family: khandsemibold;
+    src: url(/Assets/Fonts/khand/Khands.ttf);
+}
+@font-face {
+    font-family: khandmedium;
+    src: url(/Assets/Fonts/khand/Khandm.ttf);
+}
 
 // Global variables
+
+//Mixing
+@mixin font20px {
+    font-size: 20px;
+    color: $colorDefaultText;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+a {
+    text-decoration: none;
 }
 
 // html {
@@ -23,4 +56,105 @@ $xxlarge: 1320px;
 section {
     padding: 60px 0;
 }
+header {
+    background-color: $colorNavbarGreen;
+}
 
+// <!-- ========== Header Side Start ========== -->
+.header {
+    .container {
+        padding-left: 80px;
+    }
+    .navbar {
+        height: 100px;
+        padding-bottom: 12px;
+        img {
+            padding-bottom: 4px;
+        }
+        .buttons {
+            a {
+                color: $colorDefaultText;
+                font-size: 18px;
+                border: solid 2px #aac9c5;
+                border-radius: 30px;
+                padding: 5px 16px;
+                margin: 0 15px;
+                display: inline-block;
+                transition: background-color, color 0.5s ease;
+                &:hover {
+                    background-color: #aac9c5;
+                    color: white;
+                }
+            }
+            .binance {
+                font-family: khandsemibold;
+            }
+            .connect {
+                font-family: cerapromedium;
+            }
+        }
+    }
+}
+//     <!-- Header Side END -->
+
+//     <!-- ========== Section 1 Side Start  ========== -->
+.section1 {
+    background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png);
+    .container {
+        padding-left: 80px;
+    }
+    h1 {
+        font-size: 78px;
+        font-family: khandsemibold;
+        color: $colorDefaultText;
+    }
+    h2 {
+        font-family: khandregular;
+        color: #2aa595;
+        font-size: 56px;
+    }
+    .round-item {
+        background-color: #25e2c9;
+        border-radius: 34px;
+        width: 70%;
+        padding: 24px 24px;
+        margin-top: 20px;
+        h4 {
+            font-family: khandsemibold;
+            font-size: 18px;
+            margin: 0;
+        }
+        .white-round{
+            background-color: #ffffff;
+            border-radius: 20px;
+            text-align: center;
+            padding: 5px 14px;
+            margin-top: 8px;
+            h3{
+                font-family: khandmedium;
+                font-size: 20px;
+                margin: 0;
+              
+            }
+        }
+    }
+    .infinty-side{
+        img{
+            background-image: url(/Assets/img/HomePhotos/section-1-bg.png);
+            background-repeat: no-repeat;
+            background-size: 95%;
+            background-position: 43px 93px;
+        }
+    }
+}
+
+//     <!-- Section 1 Side END -->
+
+//     <!-- ========== Section Our Product Side Start  ========== -->
+//     <!-- Section Our Product Side END -->
+
+//     <!-- ========== Section Partners Side Start ========== -->
+//     <!-- Section Partners Side END -->
+
+//     <!-- ========== Section Footer Side Start ========== -->
+//     <!-- Section Footer Side END -->

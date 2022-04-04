@@ -1,0 +1,137 @@
+@font-face {
+  font-family: cerapromedium;
+  src: url(/Assets/Fonts/cerapro/cerapromedium.otf);
+}
+
+@font-face {
+  font-family: khandregular;
+  src: url(/Assets/Fonts/khand/Khandr.ttf);
+}
+
+@font-face {
+  font-family: khandbold;
+  src: url(/Assets/Fonts/khand/Khandb.ttf);
+}
+
+@font-face {
+  font-family: khandsemibold;
+  src: url(/Assets/Fonts/khand/Khands.ttf);
+}
+
+@font-face {
+  font-family: khandmedium;
+  src: url(/Assets/Fonts/khand/Khandm.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 60px 0;
+}
+
+header {
+  background-color: #e1f7f4;
+}
+
+.header .container {
+  padding-left: 80px;
+}
+
+.header .navbar {
+  height: 100px;
+  padding-bottom: 12px;
+}
+
+.header .navbar img {
+  padding-bottom: 4px;
+}
+
+.header .navbar .buttons a {
+  color: #303c3f;
+  font-size: 18px;
+  border: solid 2px #aac9c5;
+  border-radius: 30px;
+  padding: 5px 16px;
+  margin: 0 15px;
+  display: inline-block;
+  -webkit-transition: background-color, color 0.5s ease;
+  transition: background-color, color 0.5s ease;
+}
+
+.header .navbar .buttons a:hover {
+  background-color: #aac9c5;
+  color: white;
+}
+
+.header .navbar .buttons .binance {
+  font-family: khandsemibold;
+}
+
+.header .navbar .buttons .connect {
+  font-family: cerapromedium;
+}
+
+.section1 {
+  background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png);
+}
+
+.section1 .container {
+  padding-left: 80px;
+}
+
+.section1 h1 {
+  font-size: 78px;
+  font-family: khandsemibold;
+  color: #303c3f;
+}
+
+.section1 h2 {
+  font-family: khandregular;
+  color: #2aa595;
+  font-size: 56px;
+}
+
+.section1 .round-item {
+  background-color: #25e2c9;
+  border-radius: 34px;
+  width: 70%;
+  padding: 24px 24px;
+  margin-top: 20px;
+}
+
+.section1 .round-item h4 {
+  font-family: khandsemibold;
+  font-size: 18px;
+  margin: 0;
+}
+
+.section1 .round-item .white-round {
+  background-color: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px 14px;
+  margin-top: 8px;
+}
+
+.section1 .round-item .white-round h3 {
+  font-family: khandmedium;
+  font-size: 20px;
+  margin: 0;
+}
+
+.section1 .infinty-side img {
+  background-image: url(/Assets/img/HomePhotos/section-1-bg.png);
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position: 43px 93px;
+}
+/*# sourceMappingURL=main.css.map */
