@@ -1,9 +1,9 @@
 // Media Query Sizes
-$small: 540px;
-$medium: 720px;
-$large: 960px;
-$xlarge: 1140px;
-$xxlarge: 1320px;
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$xlarge: 1200px;
+$xxlarge: 1400px;
 
 // ColorS Variables!!
 $colorDefaultText: #303c3f;
@@ -63,6 +63,9 @@ header {
 // <!-- ========== Header Side Start ========== -->
 .header {
     .container {
+        @media only screen and (max-width: 1400px) {
+            padding-left: 40px;
+        }
         padding-left: 80px;
     }
     .navbar {
@@ -99,8 +102,40 @@ header {
 
 //     <!-- ========== Section 1 Side Start  ========== -->
 .section1 {
-    background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png);
+    background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png),
+        url(/Assets/img/HomePhotos/section-1-miniroundbg.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px, 96% 30%;
+    background-size: 100%, 15%;
+    .swipper-side {
+        position: relative;
+        margin-top: 20px;
+        background-color: #e1f7f4;
+        padding-bottom: 20px;
+        .rainbow-img {
+            position: absolute;
+            width: 590px;
+            top: -220px;
+            left: 10px;
+            z-index: 0;
+        }
+        .swiper-pagination {
+            .swiper-pagination-bullet {
+                background-color: #e1f7f4;
+                border: solid #25887b 1px;
+            }
+            .swiper-pagination-bullet-active {
+                background-color: #25887b !important;
+            }
+        }
+        .swiper-wrapper {
+            padding: 50px 0;
+        }
+    }
     .container {
+        @media only screen and (max-width: 1400px) {
+            padding-left: 40px;
+        }
         padding-left: 80px;
     }
     h1 {
@@ -114,32 +149,52 @@ header {
         font-size: 56px;
     }
     .round-item {
+        @media (max-width: $xlarge) {
+            width: 100%;
+        }
         background-color: #25e2c9;
         border-radius: 34px;
         width: 70%;
         padding: 24px 24px;
         margin-top: 20px;
         h4 {
+            @media (max-width: 1400px) {
+                font-size: 16px;
+            }
+            @media (max-width: $xlarge) {
+                font-size: 26px;
+            }
+            @media (max-width: $small) {
+                font-size: 18px;
+            }
             font-family: khandsemibold;
             font-size: 18px;
             margin: 0;
         }
-        .white-round{
+        .white-round {
             background-color: #ffffff;
             border-radius: 20px;
             text-align: center;
             padding: 5px 14px;
             margin-top: 8px;
-            h3{
+            h3 {
+                @media only screen and (max-width: 1400px) {
+                    font-size: 16px;
+                }
+                @media (max-width: $xlarge) {
+                    font-size: 24px;
+                }
+                @media (max-width: $small) {
+                    font-size: 18px;
+                }
                 font-family: khandmedium;
                 font-size: 20px;
                 margin: 0;
-              
             }
         }
     }
-    .infinty-side{
-        img{
+    .infinty-side {
+        img {
             background-image: url(/Assets/img/HomePhotos/section-1-bg.png);
             background-repeat: no-repeat;
             background-size: 95%;

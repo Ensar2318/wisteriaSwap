@@ -46,6 +46,12 @@ header {
   padding-left: 80px;
 }
 
+@media only screen and (max-width: 1400px) {
+  .header .container {
+    padding-left: 40px;
+  }
+}
+
 .header .navbar {
   height: 100px;
   padding-bottom: 12px;
@@ -81,11 +87,48 @@ header {
 }
 
 .section1 {
-  background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png);
+  background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png), url(/Assets/img/HomePhotos/section-1-miniroundbg.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px, 96% 30%;
+  background-size: 100%, 15%;
+}
+
+.section1 .swipper-side {
+  position: relative;
+  margin-top: 20px;
+  background-color: #e1f7f4;
+  padding-bottom: 20px;
+}
+
+.section1 .swipper-side .rainbow-img {
+  position: absolute;
+  width: 590px;
+  top: -220px;
+  left: 10px;
+  z-index: 0;
+}
+
+.section1 .swipper-side .swiper-pagination .swiper-pagination-bullet {
+  background-color: #e1f7f4;
+  border: solid #25887b 1px;
+}
+
+.section1 .swipper-side .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #25887b !important;
+}
+
+.section1 .swipper-side .swiper-wrapper {
+  padding: 50px 0;
 }
 
 .section1 .container {
   padding-left: 80px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .section1 .container {
+    padding-left: 40px;
+  }
 }
 
 .section1 h1 {
@@ -108,10 +151,34 @@ header {
   margin-top: 20px;
 }
 
+@media (max-width: 1200px) {
+  .section1 .round-item {
+    width: 100%;
+  }
+}
+
 .section1 .round-item h4 {
   font-family: khandsemibold;
   font-size: 18px;
   margin: 0;
+}
+
+@media (max-width: 1400px) {
+  .section1 .round-item h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section1 .round-item h4 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section1 .round-item h4 {
+    font-size: 18px;
+  }
 }
 
 .section1 .round-item .white-round {
@@ -126,6 +193,24 @@ header {
   font-family: khandmedium;
   font-size: 20px;
   margin: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .section1 .round-item .white-round h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section1 .round-item .white-round h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section1 .round-item .white-round h3 {
+    font-size: 18px;
+  }
 }
 
 .section1 .infinty-side img {
