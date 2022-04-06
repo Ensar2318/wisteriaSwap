@@ -35,11 +35,15 @@ a {
 }
 
 section {
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 header {
   background-color: #e1f7f4;
+}
+
+body {
+  background-repeat: no-repeat;
 }
 
 .header .container {
@@ -87,13 +91,18 @@ header {
 }
 
 .section1 {
-  background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png), url(/Assets/img/HomePhotos/section-1-miniroundbg.png);
+  position: relative;
+  background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png), url(/Assets/img/HomePhotos/section-1-miniroundbg.png), url(/Assets/img/HomePhotos/section-1-left-bg.png), url(/Assets/img/HomePhotos/section-1-dots-bg.png), url(/Assets/img/HomePhotos/section-1-announcmet-up-bg.png);
   background-repeat: no-repeat;
-  background-position: 0px 0px, 96% 30%;
-  background-size: 100%, 15%;
+  background-position: 0px 0px, 96% 14%, -226px 99%, bottom 1% left 25%, bottom 462px right 10%;
+  background-size: 1616px, 15%, 1010px, 126px, 250px;
 }
 
 .section1 .swipper-side {
+  background-image: url(/Assets/img/HomePhotos/section-1-swapper-bg.png), url(/Assets/img/HomePhotos/section-1-swapper-bg-2.png);
+  background-repeat: no-repeat;
+  background-size: 174px, 111px;
+  background-position: bottom -142px left 35%, bottom -105px right 14%;
   position: relative;
   margin-top: 20px;
   background-color: #e1f7f4;
@@ -218,5 +227,126 @@ header {
   background-repeat: no-repeat;
   background-size: 95%;
   background-position: 43px 93px;
+}
+
+.section1 .announcements-side h2 {
+  font-family: khandmedium;
+  font-size: 44px;
+  color: #303c3f;
+}
+
+.section1 .announcements-side .newpadding {
+  padding: 34px 50px !important;
+}
+
+.section1 .announcements-side .mycard {
+  padding: 50px;
+  background-color: #e1f7f4;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 30px;
+  border-radius: 22px;
+  max-height: 406px;
+  height: 406px;
+}
+
+.section1 .announcements-side .mycard .panel::-webkit-scrollbar {
+  display: none;
+}
+
+.section1 .announcements-side .mycard h5 {
+  color: #303c3f;
+  font-size: 32px;
+  font-family: khandmedium;
+}
+
+.section1 .announcements-side .mycard h6 {
+  color: #303c3f;
+  font-size: 22px;
+  font-family: khandmedium;
+  opacity: 0.5;
+  margin-bottom: 34px;
+}
+
+.section1 .announcements-side .mycard h4 {
+  font-size: 20px;
+  color: #303c3f;
+  margin: 0;
+  font-family: khandmedium;
+}
+
+.section1 .our-product {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.section1 .our-product span {
+  background-color: #25e2c9;
+  border-radius: 20px;
+  color: white;
+  display: inline-block;
+  padding: 10px 84px;
+  font-family: cerapromedium;
+}
+
+.section1 .radial {
+  width: 360px;
+  position: absolute;
+  bottom: 0;
+  right: -160px;
+}
+
+.our-product-section {
+  background-color: #e1f7f4;
+  position: relative;
+}
+
+.our-product-section .positioncube {
+  position: relative;
+}
+
+.our-product-section .positioncube img {
+  position: absolute;
+  z-index: -1;
+  left: -104px;
+  top: -90px;
+  width: 200px;
+}
+
+.our-product-section .col-xl-3 {
+  z-index: 1;
+}
+
+.our-product-section .mycard {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 48px 24px 0 24px;
+  border-radius: 40px;
+  height: 306px;
+}
+
+@media (max-width: 1400px) {
+  .our-product-section .mycard {
+    padding: 20px 24px 0 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .our-product-section .mycard {
+    padding: 50px 24px;
+  }
+}
+
+.our-product-section .mycard h3 {
+  margin: 10px 0;
+  font-family: khandmedium;
+  font-size: 26px;
+}
+
+.our-product-section .mycard p {
+  margin: 0;
+  font-family: khandregular;
+  font-size: 20px;
+  line-height: 1.2;
 }
 /*# sourceMappingURL=main.css.map */
