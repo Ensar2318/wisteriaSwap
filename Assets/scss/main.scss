@@ -4,12 +4,10 @@ $medium: 768px;
 $large: 992px;
 $xlarge: 1200px;
 $xxlarge: 1400px;
-
 // ColorS Variables!!
 $colorDefaultText: #303c3f;
 $colorLightBlackText: #7c7c7c;
 $colorNavbarGreen: #e1f7f4;
-
 // Fonts Variables
 @font-face {
     font-family: cerapromedium;
@@ -20,21 +18,23 @@ $colorNavbarGreen: #e1f7f4;
     font-family: khandregular;
     src: url(/Assets/Fonts/khand/Khandr.ttf);
 }
+
 @font-face {
     font-family: khandbold;
     src: url(/Assets/Fonts/khand/Khandb.ttf);
 }
+
 @font-face {
     font-family: khandsemibold;
     src: url(/Assets/Fonts/khand/Khands.ttf);
 }
+
 @font-face {
     font-family: khandmedium;
     src: url(/Assets/Fonts/khand/Khandm.ttf);
 }
 
 // Global variables
-
 //Mixing
 @mixin font20px {
     font-size: 20px;
@@ -46,6 +46,7 @@ $colorNavbarGreen: #e1f7f4;
     padding: 0;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
@@ -56,17 +57,28 @@ a {
 section {
     padding: 40px 0;
 }
+
 header {
     background-color: $colorNavbarGreen;
 }
+
 body {
     background-repeat: no-repeat;
+    overflow-x: hidden;
+    width: 100%;
+    background-image: url(/Assets/img/HomePhotos/section-1-ourproductbg.png);
+    background-size: 1800px;
+    background-position: 50% 124%;
 }
+
 // <!-- ========== Header Side Start ========== -->
 .header {
     .container {
         @media only screen and (max-width: 1400px) {
             padding-left: 40px;
+        }
+        @media (max-width: 600px) {
+            padding-left: 10px;
         }
         padding-left: 80px;
     }
@@ -100,20 +112,17 @@ body {
         }
     }
 }
-//     <!-- Header Side END -->
 
+//     <!-- Header Side END -->
 //     <!-- ========== Section 1 Side Start  ========== -->
 .section1 {
     position: relative;
-    background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png),
-        url(/Assets/img/HomePhotos/section-1-miniroundbg.png), url(/Assets/img/HomePhotos/section-1-left-bg.png),
-        url(/Assets/img/HomePhotos/section-1-dots-bg.png), url(/Assets/img/HomePhotos/section-1-announcmet-up-bg.png);
+    background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png), url(/Assets/img/HomePhotos/section-1-miniroundbg.png), url(/Assets/img/HomePhotos/section-1-left-bg.png), url(/Assets/img/HomePhotos/section-1-dots-bg.png), url(/Assets/img/HomePhotos/section-1-announcmet-up-bg.png);
     background-repeat: no-repeat;
     background-position: 0px 0px, 96% 14%, -226px 99%, bottom 1% left 25%, bottom 462px right 10%;
     background-size: 1616px, 15%, 1010px, 126px, 250px;
     .swipper-side {
-        background-image: url(/Assets/img/HomePhotos/section-1-swapper-bg.png),
-            url(/Assets/img/HomePhotos/section-1-swapper-bg-2.png);
+        background-image: url(/Assets/img/HomePhotos/section-1-swapper-bg.png), url(/Assets/img/HomePhotos/section-1-swapper-bg-2.png);
         background-repeat: no-repeat;
         background-size: 174px, 111px;
         background-position: bottom -142px left 35%, bottom -105px right 14%;
@@ -144,6 +153,9 @@ body {
     .container {
         @media only screen and (max-width: 1400px) {
             padding-left: 40px;
+        }
+        @media (max-width: 600px) {
+            padding-left: 10px;
         }
         padding-left: 80px;
     }
@@ -227,7 +239,6 @@ body {
             border-radius: 22px;
             max-height: 406px;
             height: 406px;
-
             .panel {
                 &::-webkit-scrollbar {
                     display: none;
@@ -259,7 +270,6 @@ body {
     .our-product {
         margin-top: 50px;
         text-align: center;
-
         span {
             background-color: #25e2c9;
             border-radius: 20px;
@@ -269,23 +279,24 @@ body {
             font-family: cerapromedium;
         }
     }
-    .radial{
-        width: 360px;
+    .radial {
+        z-index: 1;
+        width: 850px;
         position: absolute;
-        bottom: 0;
-        right: -160px;
+        bottom: -327px;
+        right: -550px;
+        display: none;
     }
 }
 
 //     <!-- Section 1 Side END -->
-
 //     <!-- ========== Section Our Product Side Start  ========== -->
 .our-product-section {
     background-color: #e1f7f4;
     position: relative;
-    .positioncube{
+    .positioncube {
         position: relative;
-        img{
+        img {
             position: absolute;
             z-index: -1;
             left: -104px;
@@ -296,7 +307,6 @@ body {
     .col-xl-3 {
         z-index: 1;
     }
-   
     .mycard {
         @media (max-width: $xxlarge) {
             padding: 20px 24px 0 24px;
@@ -304,7 +314,6 @@ body {
         @media (max-width: $xlarge) {
             padding: 50px 24px;
         }
-        
         text-align: center;
         background-color: #ffffff;
         padding: 48px 24px 0 24px;
@@ -323,10 +332,152 @@ body {
         }
     }
 }
+
 //     <!-- Section Our Product Side END -->
-
 //     <!-- ========== Section Partners Side Start ========== -->
-//     <!-- Section Partners Side END -->
+.partners {
+    padding-top: 90px;
+    padding-bottom: 40px;
+    h1 {
+        font-family: cerapromedium;
+        font-size: 46px;
+        color: $colorDefaultText;
+        margin-bottom: 36px;
+    }
+    .partners-items {
+        flex-wrap: wrap;
+        @media (max-width: $xlarge) {
+            justify-content: center;
+        }
+        .partners-outide {
+            @media (max-width: $xlarge) {
+                width: 50%;
+            }
+            @media (max-width: $medium) {
+                width: 100%;
+            }
+            width: 20%;
+            padding: 1rem;
+            .partners-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f7f7f7;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                height: 126px;
+                border-radius: 20px;
+            }
+        }
+    }
+    .metamesk {
+        padding: 26px 44px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        background-color: #f7f7f7;
+        display: flex;
+        margin: 0 1rem;
+        margin-top: 120px;
+        border-radius: 20px;
+        flex-wrap: wrap;
+        .metamesk-item {
+            @media(max-width: $xlarge) {
+                flex: 25%;
+                text-align: center;
+            }
+            @media(max-width: $medium) {
+                flex: 100%;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            flex: 18.75%;
+            h5 {
+                @media(max-width: $medium) {
+                    font-size: 28px;
+                }
+                @include font20px;
+                font-family: khandregular;
+            }
+        }
+        .metamesk-item-meta {
+            @media(max-width: $xlarge) {
+                flex: 100%;
+                justify-content: center;
+                margin-top: 30px;
+            }
+            flex: 25%;
+            display: flex;
+            align-items: center;
+            img {
+                width: 60px;
+                margin-right: 40px;
+            }
+            .add-to-metamesk {
+                font-family: khandsemibold;
+                font-size: 20px;
+                padding: 8px 20px;
+                border-radius: 8px;
+                background-color: #25e2c9;
+                border: none;
+                color: white;
+            }
+        }
+    }
+}
 
+//     <!-- Section Partners Side END -->
 //     <!-- ========== Section Footer Side Start ========== -->
+.footer {
+    padding: 60px 20px;
+    background-color: #232f41;
+    .container-fluid {
+        padding: 0 150px;
+    }
+    .footer-items {
+        display: flex;
+        flex-wrap: wrap;
+        .footer-contents {
+            display: flex;
+            flex-wrap: wrap;
+            .content-item {
+                flex: 33.33%;
+            }
+        }
+        .footer-item {
+            flex: 33.33%;
+            .img-fluid {
+                width: 400px;
+            }
+            h4 {
+                font-size: 20px;
+                font-family: khandsemibold;
+                color: white;
+            }
+            .social-medias {
+                margin-top: 10px;
+                display: flex;
+                .media-item {
+                    background-color: #25e2c9;
+                    width: 50px;
+                    height: 50px;
+                    margin: 0 8px;
+                    text-align: center;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: opacity 0.3s ease;
+                    cursor: pointer;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                    i {
+                        display: block;
+                        color: white;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 //     <!-- Section Footer Side END -->
