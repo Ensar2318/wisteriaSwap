@@ -1,0 +1,138 @@
+@import "variables.scss";
+
+.bg-stake{
+    background-size: 1340px;
+    background-position: 50% 13%;
+}
+
+// <!-- ======= Stake token to Earn Side ======= -->
+.staketotoken {
+    .stake-card {
+        @media (max-width: $medium) {
+            width: 100%;
+        }
+        background-color: #e1f7f4;
+        padding: 50px;
+        width: 590px;
+        margin: auto;
+        box-shadow: 0 3px 6px 0 #a1e2d9;
+        border-radius: 10px;
+        .stake-head {
+            margin-bottom: 24px;
+            .logo {
+                width: 77px;
+            }
+            h3 {
+                font-family: Khandsemibold;
+                font-size: 20px;
+                color: $colorDefaultText;
+                margin-bottom: 9px;
+            }
+            a {
+                font-family: khandsemibold;
+                font-size: 16px;
+                color: $colorDefaultText;
+                margin: 0;
+                border: solid 2px #36e1c9;
+                border-radius: 18px;
+                padding: 7px 22px;
+                transition: all 0.3s ease;
+                &:hover {
+                    background-color: #36e1c9;
+                    color: white;
+                }
+            }
+        }
+        .stake-content {
+            h4 {
+                font-family: khandmedium;
+                font-size: 18px;
+                color: $colorDefaultText;
+            }
+        }
+        .stake-buttons {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            button {
+                font-size: 18px;
+                font-family: khandsemibold;
+            }
+            .unlock-btn {
+                color: white;
+                background-color: #1aad99;
+                padding: 8px 0;
+                border: none;
+                border-radius: 24px;
+                margin-bottom: 26px;
+                transition: opacity 0.3s ease;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+            .details-btn {
+                background: none;
+                border: none;
+                color: $colorDefaultText;
+                transition: opacity 0.3s ease;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+// <!-- Stake token to Earn Side end -->
+
+// <!-- ============ Launch Your Project on Wisteria Now ============ -->
+.launch-project-banner {
+    background-color: #e1f7f4;
+    opacity: 0.8;
+    .kapsayici {
+        @media (max-width: $xlarge) {
+            width: 100%;
+        }
+        width: 60%;
+        text-align: center;
+        margin: auto;
+        h1,
+        h5 {
+            color: $colorDefaultText;
+        }
+        h1 {
+            font-size: 40px;
+            font-family: khandsemibold;
+        }
+        h5 {
+            font-size: 22px;
+            font-family: khandmedium;
+            margin-top: 32px;
+            margin-bottom: 42px;
+        }
+        .apply-btn {
+            border: none;
+            background-color: #25e2c9;
+            color: #ffffff;
+            padding: 10px 70px;
+            border-radius: 30px;
+            font-family: khandsemibold;
+            font-size: 18px;
+            transition: opacity 0.3s ease;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+// <!--  Launch Your Project on Wisteria Now END -->
+
+// <!-- ======= bitcoin Png Side ======= -->
+.bitcoin-png {
+    padding: 250px 0;
+    background-image: url(/Assets/img/StakePhotos/btcada.png);
+    background-position: 46% 80px;
+    background-size: 54%;
+    background-repeat: no-repeat;
+}
+// <!-- bitcoin Png Side END -->

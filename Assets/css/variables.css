@@ -1,0 +1,30 @@
+@font-face {
+  font-family: cerapromedium;
+  src: url(/Assets/Fonts/cerapro/cerapromedium.otf);
+}
+
+@font-face {
+  font-family: ceraprobold;
+  src: url(/Assets/Fonts/cerapro/ceraprobold.otf);
+}
+
+@font-face {
+  font-family: khandregular;
+  src: url(/Assets/Fonts/khand/Khandr.ttf);
+}
+
+@font-face {
+  font-family: khandbold;
+  src: url(/Assets/Fonts/khand/Khandb.ttf);
+}
+
+@font-face {
+  font-family: khandsemibold;
+  src: url(/Assets/Fonts/khand/Khands.ttf);
+}
+
+@font-face {
+  font-family: khandmedium;
+  src: url(/Assets/Fonts/khand/Khandm.ttf);
+}
+/*# sourceMappingURL=variables.css.map */

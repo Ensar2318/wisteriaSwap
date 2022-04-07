@@ -13,6 +13,10 @@ $colorNavbarGreen: #e1f7f4;
     font-family: cerapromedium;
     src: url(/Assets/Fonts/cerapro/cerapromedium.otf);
 }
+@font-face {
+    font-family: ceraprobold;
+    src: url(/Assets/Fonts/cerapro/ceraprobold.otf);
+}
 
 @font-face {
     font-family: khandregular;
@@ -68,11 +72,152 @@ body {
     width: 100%;
     background-image: url(/Assets/img/HomePhotos/section-1-ourproductbg.png);
     background-size: 1800px;
-    background-position: 50% 124%;
+    background-position: 50% 82%;
 }
 
 // <!-- ========== Header Side Start ========== -->
 .header {
+    .max-width-zero {
+        max-width: 0 !important;
+    }
+    .open-nav {
+        @media (max-width: $large) {
+            top: 0;
+        }
+        overflow: hidden;
+        position: fixed;
+        font-size: 30px;
+        color: $colorDefaultText;
+        z-index: 98;
+        background: white;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        transition: all ease 0.2s;
+        i {
+            padding: 16px;
+        }
+        &:hover {
+            opacity: 1;
+            color: #25e2c9;
+        }
+        &:hover i {
+            animation: navsclosebutton 0.3s alternate infinite;
+        }
+    }
+    .left-navbar {
+        @media (max-width: 1600px) {
+            max-width: 0px;
+        }
+        @media (max-width: $large) {
+            top: 0;
+        }
+
+        position: fixed;
+        left: 0;
+        top: 60px;
+        z-index: 99;
+        background-color: #ffffff;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 210px;
+        transition: all ease 0.2s;
+        overflow: hidden;
+        max-width: 210px;
+        .kapsayici {
+            padding: 24px 18px;
+        }
+        
+        .openedDropdown{
+            max-height: 300px !important;
+        }
+        .dropdown{
+            overflow: hidden;
+            max-height: 0;
+            padding-left: 10px;
+            transition: all 0.3s ease;
+            a{
+                @include font20px();
+                font-family: khandregular;
+            }
+        }
+        ol {
+            margin: 0;
+            padding: 0;
+            li {
+                @media (max-width: $small) {
+                    margin-bottom: 20px;
+                }
+                text-decoration: none;
+                list-style-type: none;
+                margin-bottom: 40px;
+                .active{
+                    color: #25e2c9;
+                }
+                a {
+                    .active-rotate{
+                        transform: rotate(180deg);
+                    }
+                    @include font20px();
+                    font-family: khandsemibold;
+                    display: block;
+                    transition: color 0.3s ease;
+                    position: relative;
+                    &:hover {
+                        color: #25e2c9;
+                    }
+                    .right {
+                        position: absolute;
+                        right: 0;
+                        padding: 0;
+                        transition: all 0.3s ease;
+                        bottom: calc(25px - 50%);
+
+                        font-size: 16px;
+                    }
+                    i {
+                        padding-right: 12px;
+                    }
+                }
+            }
+        }
+
+        .price-wst {
+            @media (max-width: 1600px) {
+                margin-top: 40px;
+            }
+            margin-top: 100px;
+            text-align: center;
+            img {
+                width: 112px;
+                margin-bottom: 12px;
+            }
+            .price {
+                color: #ffffff;
+                background-color: #25e2c9;
+                border-radius: 6px;
+                font-family: ceraprobold;
+                font-size: 22px;
+                padding: 10px 40px;
+            }
+        }
+        .close-nav {
+            position: absolute;
+            top: 0px;
+            padding: 20px;
+            font-size: 24px;
+            right: 0px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+
+            color: $colorDefaultText;
+            &:hover {
+                opacity: 1;
+                color: #25e2c9;
+                animation: navsclosebutton 0.3s alternate infinite;
+            }
+        }
+    }
     .container {
         @media only screen and (max-width: 1400px) {
             padding-left: 40px;
@@ -90,6 +235,9 @@ body {
         }
         .buttons {
             a {
+                @media(max-width:500px){
+                    margin: 0;
+                }
                 color: $colorDefaultText;
                 font-size: 18px;
                 border: solid 2px #aac9c5;
@@ -117,12 +265,15 @@ body {
 //     <!-- ========== Section 1 Side Start  ========== -->
 .section1 {
     position: relative;
-    background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png), url(/Assets/img/HomePhotos/section-1-miniroundbg.png), url(/Assets/img/HomePhotos/section-1-left-bg.png), url(/Assets/img/HomePhotos/section-1-dots-bg.png), url(/Assets/img/HomePhotos/section-1-announcmet-up-bg.png);
+    background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png),
+        url(/Assets/img/HomePhotos/section-1-miniroundbg.png), url(/Assets/img/HomePhotos/section-1-left-bg.png),
+        url(/Assets/img/HomePhotos/section-1-dots-bg.png), url(/Assets/img/HomePhotos/section-1-announcmet-up-bg.png);
     background-repeat: no-repeat;
-    background-position: 0px 0px, 96% 14%, -226px 99%, bottom 1% left 25%, bottom 462px right 10%;
+    background-position: 96% -50px, 96% 14%, -226px 99%, bottom 1% left 25%, bottom 462px right 10%;
     background-size: 1616px, 15%, 1010px, 126px, 250px;
     .swipper-side {
-        background-image: url(/Assets/img/HomePhotos/section-1-swapper-bg.png), url(/Assets/img/HomePhotos/section-1-swapper-bg-2.png);
+        background-image: url(/Assets/img/HomePhotos/section-1-swapper-bg.png),
+            url(/Assets/img/HomePhotos/section-1-swapper-bg-2.png);
         background-repeat: no-repeat;
         background-size: 174px, 111px;
         background-position: bottom -142px left 35%, bottom -105px right 14%;
@@ -218,7 +369,7 @@ body {
         img {
             background-image: url(/Assets/img/HomePhotos/section-1-bg.png);
             background-repeat: no-repeat;
-            background-size: 95%;
+            background-size: 90%;
             background-position: 43px 93px;
         }
     }
@@ -245,11 +396,20 @@ body {
                 }
             }
             h5 {
+                @media (max-width: $small) {
+                    font-size: 28px;
+                }
                 color: $colorDefaultText;
                 font-size: 32px;
                 font-family: khandmedium;
             }
             h6 {
+                @media (max-width: $small) {
+                    font-size: 18px;
+                }
+                @media (max-width: 350px) {
+                    margin-bottom: 14px;
+                }
                 color: $colorDefaultText;
                 font-size: 22px;
                 font-family: khandmedium;
@@ -280,12 +440,15 @@ body {
         }
     }
     .radial {
+        @media (max-width: $small) {
+            z-index: -1;
+        }
         z-index: 1;
-        width: 850px;
+        width: 200px;
         position: absolute;
-        bottom: -327px;
-        right: -550px;
-        display: none;
+        bottom: -150px;
+        right: 0;
+        display: block;
     }
 }
 
@@ -379,18 +542,18 @@ body {
         border-radius: 20px;
         flex-wrap: wrap;
         .metamesk-item {
-            @media(max-width: $xlarge) {
+            @media (max-width: $xlarge) {
                 flex: 25%;
                 text-align: center;
             }
-            @media(max-width: $medium) {
+            @media (max-width: $medium) {
                 flex: 100%;
                 text-align: center;
                 margin-bottom: 2rem;
             }
             flex: 18.75%;
             h5 {
-                @media(max-width: $medium) {
+                @media (max-width: $medium) {
                     font-size: 28px;
                 }
                 @include font20px;
@@ -398,7 +561,7 @@ body {
             }
         }
         .metamesk-item-meta {
-            @media(max-width: $xlarge) {
+            @media (max-width: $xlarge) {
                 flex: 100%;
                 justify-content: center;
                 margin-top: 30px;
@@ -429,20 +592,47 @@ body {
     padding: 60px 20px;
     background-color: #232f41;
     .container-fluid {
+        @media (max-width: 1620px) {
+            padding: 0 50px;
+        }
+        @media (max-width: $small) {
+            padding: 0 10px;
+        }
         padding: 0 150px;
     }
     .footer-items {
         display: flex;
         flex-wrap: wrap;
+        @media (max-width: $xlarge) {
+            text-align: center;
+        }
         .footer-contents {
+            @media (max-width: 1620px) {
+                padding: 0 100px;
+            }
+            @media (max-width: $xlarge) {
+                flex: 100%;
+            }
+            @media (max-width: $medium) {
+                padding: 0;
+            }
             display: flex;
             flex-wrap: wrap;
+            flex: 60% !important;
+            padding: 0 150px;
             .content-item {
                 flex: 33.33%;
             }
         }
         .footer-item {
-            flex: 33.33%;
+            @media (max-width: 1450px) {
+                flex: 15%;
+            }
+            @media (max-width: $xlarge) {
+                flex: 100%;
+                margin-bottom: 2rem;
+            }
+            flex: 20%;
             .img-fluid {
                 width: 400px;
             }
@@ -450,10 +640,20 @@ body {
                 font-size: 20px;
                 font-family: khandsemibold;
                 color: white;
+                margin-bottom: 9px;
+            }
+            h3 {
+                font-size: 20px;
+                font-family: khandregular;
+                color: white;
+                margin-bottom: 7px;
             }
             .social-medias {
                 margin-top: 10px;
                 display: flex;
+                @media (max-width: $xlarge) {
+                    justify-content: center;
+                }
                 .media-item {
                     background-color: #25e2c9;
                     width: 50px;
@@ -481,3 +681,23 @@ body {
 }
 
 //     <!-- Section Footer Side END -->
+
+// Keyframes
+
+@keyframes navsclosebutton {
+    0% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes navsopenbutton {
+    0% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
