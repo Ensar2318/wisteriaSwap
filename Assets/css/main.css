@@ -211,14 +211,7 @@ body {
 }
 
 .header .left-navbar .price-wst {
-  margin-top: 100px;
   text-align: center;
-}
-
-@media (max-width: 1600px) {
-  .header .left-navbar .price-wst {
-    margin-top: 40px;
-  }
 }
 
 .header .left-navbar .price-wst img {
