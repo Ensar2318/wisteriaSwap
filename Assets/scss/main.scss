@@ -13,6 +13,7 @@ $colorNavbarGreen: #e1f7f4;
     font-family: cerapromedium;
     src: url(/Assets/Fonts/cerapro/cerapromedium.otf);
 }
+
 @font-face {
     font-family: ceraprobold;
     src: url(/Assets/Fonts/cerapro/ceraprobold.otf);
@@ -111,7 +112,7 @@ body {
         @media (max-width: $large) {
             top: 0;
         }
-
+        bottom: 60px;
         position: fixed;
         left: 0;
         top: 60px;
@@ -126,17 +127,20 @@ body {
         max-width: 210px;
         .kapsayici {
             padding: 24px 18px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
-        
-        .openedDropdown{
+        .openedDropdown {
             max-height: 300px !important;
         }
-        .dropdown{
+        .dropdown {
             overflow: hidden;
             max-height: 0;
             padding-left: 10px;
             transition: all 0.3s ease;
-            a{
+            a {
                 @include font20px();
                 font-family: khandregular;
             }
@@ -151,11 +155,11 @@ body {
                 text-decoration: none;
                 list-style-type: none;
                 margin-bottom: 40px;
-                .active{
+                .active {
                     color: #25e2c9;
                 }
                 a {
-                    .active-rotate{
+                    .active-rotate {
                         transform: rotate(180deg);
                     }
                     @include font20px();
@@ -172,7 +176,6 @@ body {
                         padding: 0;
                         transition: all 0.3s ease;
                         bottom: calc(25px - 50%);
-
                         font-size: 16px;
                     }
                     i {
@@ -181,7 +184,6 @@ body {
                 }
             }
         }
-
         .price-wst {
             @media (max-width: 1600px) {
                 margin-top: 40px;
@@ -209,7 +211,6 @@ body {
             right: 0px;
             cursor: pointer;
             transition: color 0.3s ease;
-
             color: $colorDefaultText;
             &:hover {
                 opacity: 1;
@@ -235,7 +236,7 @@ body {
         }
         .buttons {
             a {
-                @media(max-width:500px){
+                @media (max-width: 500px) {
                     margin: 0;
                 }
                 color: $colorDefaultText;
@@ -245,7 +246,8 @@ body {
                 padding: 5px 16px;
                 margin: 0 15px;
                 display: inline-block;
-                transition: background-color, color 0.5s ease;
+                transition: background-color,
+                color 0.5s ease;
                 &:hover {
                     background-color: #aac9c5;
                     color: white;
@@ -265,15 +267,12 @@ body {
 //     <!-- ========== Section 1 Side Start  ========== -->
 .section1 {
     position: relative;
-    background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png),
-        url(/Assets/img/HomePhotos/section-1-miniroundbg.png), url(/Assets/img/HomePhotos/section-1-left-bg.png),
-        url(/Assets/img/HomePhotos/section-1-dots-bg.png), url(/Assets/img/HomePhotos/section-1-announcmet-up-bg.png);
+    background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png), url(/Assets/img/HomePhotos/section-1-miniroundbg.png), url(/Assets/img/HomePhotos/section-1-left-bg.png), url(/Assets/img/HomePhotos/section-1-dots-bg.png), url(/Assets/img/HomePhotos/section-1-announcmet-up-bg.png);
     background-repeat: no-repeat;
     background-position: 96% -50px, 96% 14%, -226px 99%, bottom 1% left 25%, bottom 462px right 10%;
     background-size: 1616px, 15%, 1010px, 126px, 250px;
     .swipper-side {
-        background-image: url(/Assets/img/HomePhotos/section-1-swapper-bg.png),
-            url(/Assets/img/HomePhotos/section-1-swapper-bg-2.png);
+        background-image: url(/Assets/img/HomePhotos/section-1-swapper-bg.png), url(/Assets/img/HomePhotos/section-1-swapper-bg-2.png);
         background-repeat: no-repeat;
         background-size: 174px, 111px;
         background-position: bottom -142px left 35%, bottom -105px right 14%;
@@ -681,9 +680,7 @@ body {
 }
 
 //     <!-- Section Footer Side END -->
-
 // Keyframes
-
 @keyframes navsclosebutton {
     0% {
         transform: translateX(-10px);
