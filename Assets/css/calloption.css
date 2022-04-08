@@ -1,0 +1,105 @@
+@font-face {
+  font-family: cerapromedium;
+  src: url(/Assets/Fonts/cerapro/cerapromedium.otf);
+}
+
+@font-face {
+  font-family: ceraprobold;
+  src: url(/Assets/Fonts/cerapro/ceraprobold.otf);
+}
+
+@font-face {
+  font-family: khandregular;
+  src: url(/Assets/Fonts/khand/Khandr.ttf);
+}
+
+@font-face {
+  font-family: khandbold;
+  src: url(/Assets/Fonts/khand/Khandb.ttf);
+}
+
+@font-face {
+  font-family: khandsemibold;
+  src: url(/Assets/Fonts/khand/Khands.ttf);
+}
+
+@font-face {
+  font-family: khandmedium;
+  src: url(/Assets/Fonts/khand/Khandm.ttf);
+}
+
+.ifoinitalsale .ifo-body h1 {
+  font-size: 46px;
+  color: #303c3f;
+  font-family: khandmedium;
+}
+
+.ifoinitalsale .ifo-body h5 {
+  font-size: 22px;
+  color: #303c3f;
+  font-family: khandregular;
+}
+
+.ifoinitalsale .ifo-body .ifo-buttons {
+  margin-top: 20px;
+}
+
+.ifoinitalsale .ifo-body .ifo-buttons button {
+  color: #0c907e;
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 18px;
+  font-family: khandmedium;
+  margin: 0 8px;
+  border: none;
+  background: none;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.ifoinitalsale .ifo-body .ifo-buttons button:hover {
+  opacity: 0.8;
+}
+
+.ifoinitalsale .ifo-body .ifo-buttons .active {
+  background-color: #0c907e;
+  color: white;
+}
+
+.ifoinitalsale .ifo-body .ifo-card {
+  background-color: #e1f7f4;
+  padding: 40px 90px;
+  width: 70%;
+  border-radius: 22px;
+  margin-top: 30px;
+}
+
+.ifoinitalsale .ifo-body .ifo-card h3 {
+  color: #0c907e;
+  margin: 12px;
+  font-size: 26px;
+  font-family: khandsemibold;
+}
+
+.ifoinitalsale .ifo-body .ifo-card p {
+  color: #303c3f;
+  font-size: 20px;
+  font-family: khandregular;
+}
+
+.ifoinitalsale .ifo-body .ifo-card button {
+  padding: 10px 158px;
+  color: white;
+  background-color: #0c907e;
+  border-radius: 24px;
+  font-family: khandsemibold;
+  font-size: 16px;
+  border: none;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.ifoinitalsale .ifo-body .ifo-card button:hover {
+  opacity: 0.8;
+}
+/*# sourceMappingURL=calloption.css.map */
