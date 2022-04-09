@@ -1,346 +1,348 @@
 @font-face {
-  font-family: cerapromedium;
-  src: url(/Assets/Fonts/cerapro/cerapromedium.otf);
+    font-family: cerapromedium;
+    src: url(../Fonts/cerapro/cerapromedium.otf);
 }
 
 @font-face {
-  font-family: ceraprobold;
-  src: url(/Assets/Fonts/cerapro/ceraprobold.otf);
+    font-family: ceraprobold;
+    src: url(../Fonts/cerapro/ceraprobold.otf);
 }
 
 @font-face {
-  font-family: khandregular;
-  src: url(/Assets/Fonts/khand/Khandr.ttf);
+    font-family: khandregular;
+    src: url(../Fonts/khand/Khandr.ttf);
 }
 
 @font-face {
-  font-family: khandbold;
-  src: url(/Assets/Fonts/khand/Khandb.ttf);
+    font-family: khandbold;
+    src: url(../Fonts/khand/Khandb.ttf);
 }
 
 @font-face {
-  font-family: khandsemibold;
-  src: url(/Assets/Fonts/khand/Khands.ttf);
+    font-family: khandsemibold;
+    src: url(../Fonts/khand/Khands.ttf);
 }
 
 @font-face {
-  font-family: khandmedium;
-  src: url(/Assets/Fonts/khand/Khandm.ttf);
+    font-family: khandmedium;
+    src: url(../Fonts/khand/Khandm.ttf);
 }
 
 .bg-stake {
-  background-size: 1340px;
-  background-position: 50% 13%;
+    background-size: 1340px;
+    background-position: 50% 13%;
 }
 
 .staketotoken .stake-swicth {
-  margin: 34px 0;
+    margin: 34px 0;
 }
 
 .staketotoken .stake-swicth h3 {
-  font-size: 18px;
-  color: #303c3f;
-  font-family: khandmedium;
-  margin: 0;
+    font-size: 18px;
+    color: #303c3f;
+    font-family: khandmedium;
+    margin: 0;
 }
 
 .staketotoken .stake-swicth .kapsayici-switch {
-  /* Rounded sliders */
+    /* Rounded sliders */
 }
 
 .staketotoken .stake-swicth .kapsayici-switch .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
 .staketotoken .stake-swicth .kapsayici-switch .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .staketotoken .stake-swicth .kapsayici-switch .switch .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  border: solid 1px #25e2c9;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border: solid 1px #25e2c9;
 }
 
 .staketotoken .stake-swicth .kapsayici-switch .switch .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 3px;
-  background-color: #25e2c9;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 3px;
+    background-color: #25e2c9;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
 }
 
-.staketotoken .stake-swicth .kapsayici-switch .switch input:checked + .slider {
-  background-color: #25e2c9;
+.staketotoken .stake-swicth .kapsayici-switch .switch input:checked+.slider {
+    background-color: #25e2c9;
 }
 
-.staketotoken .stake-swicth .kapsayici-switch .switch input:checked + .slider::before {
-  background-color: #ffffff;
+.staketotoken .stake-swicth .kapsayici-switch .switch input:checked+.slider::before {
+    background-color: #ffffff;
 }
 
-.staketotoken .stake-swicth .kapsayici-switch .switch input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  transform: translateX(26px);
+.staketotoken .stake-swicth .kapsayici-switch .switch input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    transform: translateX(26px);
 }
 
 .staketotoken .stake-swicth .kapsayici-switch .slider.round {
-  border-radius: 34px;
+    border-radius: 34px;
 }
 
 .staketotoken .stake-swicth .kapsayici-switch .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 .staketotoken .stake-swicth .radio input {
-  width: auto;
-  height: 100%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 40px;
-  padding: 10px 18px;
-  background: white;
-  color: #303c3f;
-  font-size: 18px;
-  font-family: khandmedium;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+    width: auto;
+    height: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 10px 18px;
+    background: white;
+    color: #303c3f;
+    font-size: 18px;
+    font-family: khandmedium;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
 }
 
 .staketotoken .stake-swicth .radio input:checked {
-  background-color: #25e2c9;
-  color: #fff;
+    background-color: #25e2c9;
+    color: #fff;
 }
 
 .staketotoken .stake-swicth .radio input:before {
-  content: attr(label);
-  display: inline-block;
-  text-align: center;
-  width: 100%;
+    content: attr(label);
+    display: inline-block;
+    text-align: center;
+    width: 100%;
 }
 
 .staketotoken .stake-card {
-  background-color: #e1f7f4;
-  padding: 50px;
-  width: 590px;
-  margin: auto;
-  -webkit-box-shadow: 0 3px 6px 0 #a1e2d9;
-          box-shadow: 0 3px 6px 0 #a1e2d9;
-  border-radius: 10px;
+    background-color: #e1f7f4;
+    padding: 50px;
+    width: 590px;
+    margin: auto;
+    -webkit-box-shadow: 0 3px 6px 0 #a1e2d9;
+    box-shadow: 0 3px 6px 0 #a1e2d9;
+    border-radius: 10px;
 }
 
 @media (max-width: 768px) {
-  .staketotoken .stake-card {
-    width: 100%;
-  }
+    .staketotoken .stake-card {
+        width: 100%;
+    }
 }
 
 .staketotoken .stake-card .stake-head {
-  margin-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 .staketotoken .stake-card .stake-head .logo {
-  width: 77px;
+    width: 77px;
 }
 
 .staketotoken .stake-card .stake-head h3 {
-  font-family: Khandsemibold;
-  font-size: 20px;
-  color: #303c3f;
-  margin-bottom: 9px;
+    font-family: Khandsemibold;
+    font-size: 20px;
+    color: #303c3f;
+    margin-bottom: 9px;
 }
 
 .staketotoken .stake-card .stake-head a {
-  font-family: khandsemibold;
-  font-size: 16px;
-  color: #303c3f;
-  margin: 0;
-  border: solid 2px #36e1c9;
-  border-radius: 18px;
-  padding: 7px 22px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+    font-family: khandsemibold;
+    font-size: 16px;
+    color: #303c3f;
+    margin: 0;
+    border: solid 2px #36e1c9;
+    border-radius: 18px;
+    padding: 7px 22px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .staketotoken .stake-card .stake-head a:hover {
-  background-color: #36e1c9;
-  color: white;
+    background-color: #36e1c9;
+    color: white;
 }
 
 .staketotoken .stake-card .stake-content h4 {
-  font-family: khandmedium;
-  font-size: 18px;
-  color: #303c3f;
+    font-family: khandmedium;
+    font-size: 18px;
+    color: #303c3f;
 }
 
 .staketotoken .stake-card .stake-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 30px;
 }
 
 .staketotoken .stake-card .stake-buttons button {
-  font-size: 18px;
-  font-family: khandsemibold;
+    font-size: 18px;
+    font-family: khandsemibold;
 }
 
 .staketotoken .stake-card .stake-buttons .unlock-btn {
-  color: white;
-  background-color: #1aad99;
-  padding: 8px 0;
-  border: none;
-  border-radius: 24px;
-  margin-bottom: 26px;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+    color: white;
+    background-color: #1aad99;
+    padding: 8px 0;
+    border: none;
+    border-radius: 24px;
+    margin-bottom: 26px;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .staketotoken .stake-card .stake-buttons .unlock-btn:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 .staketotoken .stake-card .stake-buttons .details-btn {
-  background: none;
-  border: none;
-  color: #303c3f;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+    background: none;
+    border: none;
+    color: #303c3f;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .staketotoken .stake-card .stake-buttons .details-btn:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 .launch-project-banner {
-  background-color: #e1f7f4;
-  opacity: 0.8;
+    background-color: #e1f7f4;
+    opacity: 0.8;
 }
 
 .launch-project-banner .kapsayici {
-  width: 60%;
-  text-align: center;
-  margin: auto;
+    width: 60%;
+    text-align: center;
+    margin: auto;
 }
 
 @media (max-width: 1200px) {
-  .launch-project-banner .kapsayici {
-    width: 100%;
-  }
+    .launch-project-banner .kapsayici {
+        width: 100%;
+    }
 }
 
 .launch-project-banner .kapsayici h1,
 .launch-project-banner .kapsayici h5 {
-  color: #303c3f;
+    color: #303c3f;
 }
 
 .launch-project-banner .kapsayici h1 {
-  font-size: 40px;
-  font-family: khandsemibold;
+    font-size: 40px;
+    font-family: khandsemibold;
 }
 
 .launch-project-banner .kapsayici h5 {
-  font-size: 22px;
-  font-family: khandmedium;
-  margin-top: 32px;
-  margin-bottom: 42px;
+    font-size: 22px;
+    font-family: khandmedium;
+    margin-top: 32px;
+    margin-bottom: 42px;
 }
 
 .launch-project-banner .kapsayici .apply-btn {
-  border: none;
-  background-color: #25e2c9;
-  color: #ffffff;
-  padding: 10px 70px;
-  border-radius: 30px;
-  font-family: khandsemibold;
-  font-size: 18px;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+    border: none;
+    background-color: #25e2c9;
+    color: #ffffff;
+    padding: 10px 70px;
+    border-radius: 30px;
+    font-family: khandsemibold;
+    font-size: 18px;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .launch-project-banner .kapsayici .apply-btn:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 .bitcoin-png {
-  padding: 250px 0;
-  background-image: url(/Assets/img/StakePhotos/btcada.png);
-  background-position: 46% 80px;
-  background-size: 54%;
-  background-repeat: no-repeat;
+    padding: 250px 0;
+    background-image: url(../img/StakePhotos/btcada.png);
+    background-position: 46% 80px;
+    background-size: 54%;
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 1800px) {
-  .bitcoin-png {
-    background-size: 60%;
-  }
+    .bitcoin-png {
+        background-size: 60%;
+    }
 }
 
 @media (max-width: 1600px) {
-  .bitcoin-png {
-    background-size: 70%;
-  }
+    .bitcoin-png {
+        background-size: 70%;
+    }
 }
 
 @media (max-width: 1400px) {
-  .bitcoin-png {
-    background-size: 80%;
-    background-position: 46% 120px;
-  }
+    .bitcoin-png {
+        background-size: 80%;
+        background-position: 46% 120px;
+    }
 }
 
 @media (max-width: 1200px) {
-  .bitcoin-png {
-    background-size: 90%;
-  }
+    .bitcoin-png {
+        background-size: 90%;
+    }
 }
 
 @media (max-width: 1000px) {
-  .bitcoin-png {
-    background-size: 100%;
-  }
+    .bitcoin-png {
+        background-size: 100%;
+    }
 }
 
 @media (max-width: 900px) {
-  .bitcoin-png {
-    background-size: 120%;
-    background-position: 46% 160px;
-  }
+    .bitcoin-png {
+        background-size: 120%;
+        background-position: 46% 160px;
+    }
 }
 
 @media (max-width: 500px) {
-  .bitcoin-png {
-    background-size: 140%;
-  }
+    .bitcoin-png {
+        background-size: 140%;
+    }
 }
 
 @media (max-width: 400px) {
-  .bitcoin-png {
-    background-size: 140%;
-    padding: 150px 0;
-    background-position: 70% 80px;
-  }
+    .bitcoin-png {
+        background-size: 140%;
+        padding: 150px 0;
+        background-position: 70% 80px;
+    }
 }
+
+
 /*# sourceMappingURL=stake.css.map */

@@ -1,31 +1,31 @@
 @font-face {
   font-family: cerapromedium;
-  src: url(/Assets/Fonts/cerapro/cerapromedium.otf);
+  src: url(../Fonts/cerapro/cerapromedium.otf);
 }
 
 @font-face {
   font-family: ceraprobold;
-  src: url(/Assets/Fonts/cerapro/ceraprobold.otf);
+  src: url(../Fonts/cerapro/ceraprobold.otf);
 }
 
 @font-face {
   font-family: khandregular;
-  src: url(/Assets/Fonts/khand/Khandr.ttf);
+  src: url(../Fonts/khand/Khandr.ttf);
 }
 
 @font-face {
   font-family: khandbold;
-  src: url(/Assets/Fonts/khand/Khandb.ttf);
+  src: url(../Fonts/khand/Khandb.ttf);
 }
 
 @font-face {
   font-family: khandsemibold;
-  src: url(/Assets/Fonts/khand/Khands.ttf);
+  src: url(../Fonts/khand/Khands.ttf);
 }
 
 @font-face {
   font-family: khandmedium;
-  src: url(/Assets/Fonts/khand/Khandm.ttf);
+  src: url(../Fonts/khand/Khandm.ttf);
 }
 
 * {
@@ -51,7 +51,7 @@ body {
   background-repeat: no-repeat;
   overflow-x: hidden;
   width: 100%;
-  background-image: url(/Assets/img/HomePhotos/section-1-ourproductbg.png);
+  background-image: url(../img/HomePhotos/section-1-ourproductbg.png);
   background-size: 1800px;
   background-position: 50% 82%;
 }
@@ -317,14 +317,14 @@ body {
 
 .section1 {
   position: relative;
-  background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png), url(/Assets/img/HomePhotos/section-1-miniroundbg.png), url(/Assets/img/HomePhotos/section-1-left-bg.png), url(/Assets/img/HomePhotos/section-1-dots-bg.png), url(/Assets/img/HomePhotos/section-1-announcmet-up-bg.png);
+  background-image: url(../img/HomePhotos/Section-1-mainbg.png), url(../img/HomePhotos/section-1-miniroundbg.png), url(../img/HomePhotos/section-1-left-bg.png), url(../img/HomePhotos/section-1-dots-bg.png), url(../img/HomePhotos/section-1-announcmet-up-bg.png);
   background-repeat: no-repeat;
   background-position: 96% -50px, 96% 14%, -226px 99%, bottom 1% left 25%, bottom 462px right 10%;
   background-size: 1616px, 15%, 1010px, 126px, 250px;
 }
 
 .section1 .swipper-side {
-  background-image: url(/Assets/img/HomePhotos/section-1-swapper-bg.png), url(/Assets/img/HomePhotos/section-1-swapper-bg-2.png);
+  background-image: url(../img/HomePhotos/section-1-swapper-bg.png), url(../img/HomePhotos/section-1-swapper-bg-2.png);
   background-repeat: no-repeat;
   background-size: 174px, 111px;
   background-position: bottom -142px left 35%, bottom -105px right 14%;
@@ -454,7 +454,7 @@ body {
 }
 
 .section1 .infinty-side img {
-  background-image: url(/Assets/img/HomePhotos/section-1-bg.png);
+  background-image: url(../img/HomePhotos/section-1-bg.png);
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: 43px 93px;

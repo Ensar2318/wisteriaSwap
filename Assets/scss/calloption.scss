@@ -5,7 +5,7 @@ body {
 }
 
 .ifoinitalsale {
-    background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png), url(/Assets/img/HomePhotos/section-1-likerainbow.png), url(/Assets/img/calloptionsPhotos/icecream.png), url(/Assets/img/calloptionsPhotos/cube.png), url(/Assets/img/calloptionsPhotos/dama.png), url(/Assets/img/calloptionsPhotos/dots.png);
+    background-image: url(../img/HomePhotos/Section-1-mainbg.png), url(../img/HomePhotos/section-1-likerainbow.png), url(../img/calloptionsPhotos/icecream.png), url(../img/calloptionsPhotos/cube.png), url(../img/calloptionsPhotos/dama.png), url(../img/calloptionsPhotos/dots.png);
     background-repeat: no-repeat;
     background-size: 1879px, 73%, 280px, 300px, 220px, 150px;
     background-position: 313px -58px, -588px 85px, 88% 760px, 25% 1200px, 77% 1622px, 30% 1627px;
@@ -238,7 +238,7 @@ body {
         }
         .bottom-img {
             margin-top: 100px;
-            background-image: url(/Assets/img/calloptionsPhotos/call-option-bottom.png);
+            background-image: url(../img/calloptionsPhotos/call-option-bottom.png);
             background-size: 700px;
             background-repeat: no-repeat;
             width: 100%;

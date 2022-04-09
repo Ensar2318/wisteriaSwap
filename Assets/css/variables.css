@@ -1,30 +1,32 @@
 @font-face {
-  font-family: cerapromedium;
-  src: url(/Assets/Fonts/cerapro/cerapromedium.otf);
+    font-family: cerapromedium;
+    src: url(../Fonts/cerapro/cerapromedium.otf);
 }
 
 @font-face {
-  font-family: ceraprobold;
-  src: url(/Assets/Fonts/cerapro/ceraprobold.otf);
+    font-family: ceraprobold;
+    src: url(../Fonts/cerapro/ceraprobold.otf);
 }
 
 @font-face {
-  font-family: khandregular;
-  src: url(/Assets/Fonts/khand/Khandr.ttf);
+    font-family: khandregular;
+    src: url(../Fonts/khand/Khandr.ttf);
 }
 
 @font-face {
-  font-family: khandbold;
-  src: url(/Assets/Fonts/khand/Khandb.ttf);
+    font-family: khandbold;
+    src: url(../Fonts/khand/Khandb.ttf);
 }
 
 @font-face {
-  font-family: khandsemibold;
-  src: url(/Assets/Fonts/khand/Khands.ttf);
+    font-family: khandsemibold;
+    src: url(../Fonts/khand/Khands.ttf);
 }
 
 @font-face {
-  font-family: khandmedium;
-  src: url(/Assets/Fonts/khand/Khandm.ttf);
+    font-family: khandmedium;
+    src: url(../Fonts/khand/Khandm.ttf);
 }
+
+
 /*# sourceMappingURL=variables.css.map */

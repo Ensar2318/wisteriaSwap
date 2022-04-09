@@ -1,364 +1,366 @@
 @font-face {
-  font-family: cerapromedium;
-  src: url(/Assets/Fonts/cerapro/cerapromedium.otf);
+    font-family: cerapromedium;
+    src: url(../Fonts/cerapro/cerapromedium.otf);
 }
 
 @font-face {
-  font-family: ceraprobold;
-  src: url(/Assets/Fonts/cerapro/ceraprobold.otf);
+    font-family: ceraprobold;
+    src: url(../Fonts/cerapro/ceraprobold.otf);
 }
 
 @font-face {
-  font-family: khandregular;
-  src: url(/Assets/Fonts/khand/Khandr.ttf);
+    font-family: khandregular;
+    src: url(../Fonts/khand/Khandr.ttf);
 }
 
 @font-face {
-  font-family: khandbold;
-  src: url(/Assets/Fonts/khand/Khandb.ttf);
+    font-family: khandbold;
+    src: url(../Fonts/khand/Khandb.ttf);
 }
 
 @font-face {
-  font-family: khandsemibold;
-  src: url(/Assets/Fonts/khand/Khands.ttf);
+    font-family: khandsemibold;
+    src: url(../Fonts/khand/Khands.ttf);
 }
 
 @font-face {
-  font-family: khandmedium;
-  src: url(/Assets/Fonts/khand/Khandm.ttf);
+    font-family: khandmedium;
+    src: url(../Fonts/khand/Khandm.ttf);
 }
 
 body {
-  background-image: none;
+    background-image: none;
 }
 
 .ifoinitalsale {
-  background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png), url(/Assets/img/HomePhotos/section-1-likerainbow.png), url(/Assets/img/calloptionsPhotos/icecream.png), url(/Assets/img/calloptionsPhotos/cube.png), url(/Assets/img/calloptionsPhotos/dama.png), url(/Assets/img/calloptionsPhotos/dots.png);
-  background-repeat: no-repeat;
-  background-size: 1879px, 73%, 280px, 300px, 220px, 150px;
-  background-position: 313px -58px, -588px 85px, 88% 760px, 25% 1200px, 77% 1622px, 30% 1627px;
-  padding-top: 50px;
-  padding-bottom: 0;
+    background-image: url(../img/HomePhotos/Section-1-mainbg.png), url(../img/HomePhotos/section-1-likerainbow.png), url(../img/calloptionsPhotos/icecream.png), url(../img/calloptionsPhotos/cube.png), url(../img/calloptionsPhotos/dama.png), url(../img/calloptionsPhotos/dots.png);
+    background-repeat: no-repeat;
+    background-size: 1879px, 73%, 280px, 300px, 220px, 150px;
+    background-position: 313px -58px, -588px 85px, 88% 760px, 25% 1200px, 77% 1622px, 30% 1627px;
+    padding-top: 50px;
+    padding-bottom: 0;
 }
 
 .ifoinitalsale .ifo-body h1 {
-  font-size: 46px;
-  color: #303c3f;
-  font-family: khandmedium;
+    font-size: 46px;
+    color: #303c3f;
+    font-family: khandmedium;
 }
 
 .ifoinitalsale .ifo-body h5 {
-  font-size: 22px;
-  color: #303c3f;
-  font-family: khandregular;
+    font-size: 22px;
+    color: #303c3f;
+    font-family: khandregular;
 }
 
 .ifoinitalsale .ifo-body h4 {
-  margin-bottom: 120px;
-  margin-top: 66px;
-  font-size: 32px;
-  color: #303c3f;
-  font-family: khandsemibold;
+    margin-bottom: 120px;
+    margin-top: 66px;
+    font-size: 32px;
+    color: #303c3f;
+    font-family: khandsemibold;
 }
 
 @media (max-width: 1100px) {
-  .ifoinitalsale .ifo-body h4 {
-    margin-bottom: 40px;
-  }
+    .ifoinitalsale .ifo-body h4 {
+        margin-bottom: 40px;
+    }
 }
 
 .ifoinitalsale .ifo-body .ifo-buttons {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .ifoinitalsale .ifo-body .ifo-buttons button {
-  color: #0c907e;
-  border-radius: 20px;
-  padding: 5px 14px;
-  font-size: 18px;
-  font-family: khandmedium;
-  margin: 0 8px;
-  border: none;
-  background: none;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+    color: #0c907e;
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 18px;
+    font-family: khandmedium;
+    margin: 0 8px;
+    border: none;
+    background: none;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .ifoinitalsale .ifo-body .ifo-buttons button:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 .ifoinitalsale .ifo-body .ifo-buttons .active {
-  background-color: #0c907e;
-  color: white;
+    background-color: #0c907e;
+    color: white;
 }
 
 .ifoinitalsale .ifo-body .ifo-card {
-  background-color: #e1f7f4;
-  padding: 40px 90px;
-  width: 70%;
-  border-radius: 22px;
-  margin-top: 30px;
-  border: solid 2px rgba(175, 175, 175, 0.16);
+    background-color: #e1f7f4;
+    padding: 40px 90px;
+    width: 70%;
+    border-radius: 22px;
+    margin-top: 30px;
+    border: solid 2px rgba(175, 175, 175, 0.16);
 }
 
 @media (max-width: 768px) {
-  .ifoinitalsale .ifo-body .ifo-card {
-    padding: 40px;
-  }
+    .ifoinitalsale .ifo-body .ifo-card {
+        padding: 40px;
+    }
 }
 
 .ifoinitalsale .ifo-body .ifo-card h3 {
-  color: #0c907e;
-  margin: 12px;
-  font-size: 26px;
-  font-family: khandsemibold;
+    color: #0c907e;
+    margin: 12px;
+    font-size: 26px;
+    font-family: khandsemibold;
 }
 
 .ifoinitalsale .ifo-body .ifo-card p {
-  color: #303c3f;
-  font-size: 20px;
-  font-family: khandregular;
+    color: #303c3f;
+    font-size: 20px;
+    font-family: khandregular;
 }
 
 .ifoinitalsale .ifo-body .ifo-card button {
-  padding: 10px 158px;
-  color: white;
-  background-color: #0c907e;
-  border-radius: 24px;
-  font-family: khandsemibold;
-  font-size: 16px;
-  border: none;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+    padding: 10px 158px;
+    color: white;
+    background-color: #0c907e;
+    border-radius: 24px;
+    font-family: khandsemibold;
+    font-size: 16px;
+    border: none;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 @media (max-width: 1100px) {
-  .ifoinitalsale .ifo-body .ifo-card button {
-    padding: 10px 0;
-    width: 100%;
-  }
+    .ifoinitalsale .ifo-body .ifo-card button {
+        padding: 10px 0;
+        width: 100%;
+    }
 }
 
 .ifoinitalsale .ifo-body .ifo-card button:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 .ifoinitalsale .ifo-body .other-margin-bottom {
-  margin-bottom: 162px;
+    margin-bottom: 162px;
 }
 
 @media (max-width: 1100px) {
-  .ifoinitalsale .ifo-body .other-margin-bottom {
-    margin-bottom: 40px;
-  }
+    .ifoinitalsale .ifo-body .other-margin-bottom {
+        margin-bottom: 40px;
+    }
 }
 
 .ifoinitalsale .ifo-body .ifo-phase {
-  position: relative;
+    position: relative;
 }
 
 @media (max-width: 1100px) {
-  .ifoinitalsale .ifo-body .ifo-phase {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+    .ifoinitalsale .ifo-body .ifo-phase {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
+        flex-direction: column;
+        -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-  }
+        align-items: center;
+    }
 }
 
 .ifoinitalsale .ifo-body .ifo-phase .left {
-  right: 119px;
+    right: 119px;
 }
 
 .ifoinitalsale .ifo-body .ifo-phase .right {
-  left: 119px;
+    left: 119px;
 }
 
 .ifoinitalsale .ifo-body .ifo-phase .custom-other-setting {
-  padding: 40px 34px !important;
-  top: calc(50% - 110px) !important;
+    padding: 40px 34px !important;
+    top: calc(50% - 110px) !important;
 }
 
 .ifoinitalsale .ifo-body .ifo-phase .ellips {
-  width: 57px;
-  height: 57px;
-  border-radius: 40px;
-  background-color: #0c907e;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: khandmedium;
-  font-size: 34px;
+    width: 57px;
+    height: 57px;
+    border-radius: 40px;
+    background-color: #0c907e;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: khandmedium;
+    font-size: 34px;
 }
 
 @media (max-width: 1100px) {
-  .ifoinitalsale .ifo-body .ifo-phase .ellips {
-    margin-bottom: 1rem;
-  }
+    .ifoinitalsale .ifo-body .ifo-phase .ellips {
+        margin-bottom: 1rem;
+    }
 }
 
 .ifoinitalsale .ifo-body .ifo-phase .ellips-card {
-  border: solid 2px rgba(175, 175, 175, 0.16);
-  background-color: #e1f7f4;
-  padding: 27px 34px;
-  border-radius: 22px;
-  width: 440px;
-  position: absolute;
-  top: calc(50% - 86px);
+    border: solid 2px rgba(175, 175, 175, 0.16);
+    background-color: #e1f7f4;
+    padding: 27px 34px;
+    border-radius: 22px;
+    width: 440px;
+    position: absolute;
+    top: calc(50% - 86px);
 }
 
 @media (max-width: 1100px) {
-  .ifoinitalsale .ifo-body .ifo-phase .ellips-card {
-    position: static;
-  }
+    .ifoinitalsale .ifo-body .ifo-phase .ellips-card {
+        position: static;
+    }
 }
 
 @media (max-width: 500px) {
-  .ifoinitalsale .ifo-body .ifo-phase .ellips-card {
-    width: 100%;
-  }
+    .ifoinitalsale .ifo-body .ifo-phase .ellips-card {
+        width: 100%;
+    }
 }
 
 .ifoinitalsale .ifo-body .ifo-phase .ellips-card p {
-  opacity: 0.8;
-  font-family: khandregular;
-  font-size: 20px;
-  color: #303c3f;
-  margin: 0;
+    opacity: 0.8;
+    font-family: khandregular;
+    font-size: 20px;
+    color: #303c3f;
+    margin: 0;
 }
 
 @media (max-width: 500px) {
-  .ifoinitalsale .ifo-body .ifo-phase .ellips-card p {
-    font-size: 16px;
-  }
+    .ifoinitalsale .ifo-body .ifo-phase .ellips-card p {
+        font-size: 16px;
+    }
 }
 
 .ifoinitalsale .ifo-body .ifo-phase .ellips-card .my-card-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .ifoinitalsale .ifo-body .ifo-phase .ellips-card .my-card-title h3 {
-  color: #0c907e;
-  margin: 0;
-  margin-left: 10px;
-  font-size: 26px;
-  font-family: khandsemibold;
+    color: #0c907e;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 26px;
+    font-family: khandsemibold;
 }
 
 @media (max-width: 500px) {
-  .ifoinitalsale .ifo-body .ifo-phase .ellips-card .my-card-title h3 {
-    font-size: 18px;
-  }
+    .ifoinitalsale .ifo-body .ifo-phase .ellips-card .my-card-title h3 {
+        font-size: 18px;
+    }
 }
 
 .ifoinitalsale .ifo-body .details {
-  margin-top: 248px;
-  background-color: #e1f7f4;
-  border-radius: 18px;
-  width: 45%;
-  overflow: hidden;
+    margin-top: 248px;
+    background-color: #e1f7f4;
+    border-radius: 18px;
+    width: 45%;
+    overflow: hidden;
 }
 
 @media (max-width: 1100px) {
-  .ifoinitalsale .ifo-body .details {
-    margin-top: 80px;
-    width: 100%;
-  }
+    .ifoinitalsale .ifo-body .details {
+        margin-top: 80px;
+        width: 100%;
+    }
 }
 
 .ifoinitalsale .ifo-body .details .details-title {
-  background-color: #0c907e;
-  padding: 19px 24px;
+    background-color: #0c907e;
+    padding: 19px 24px;
 }
 
 .ifoinitalsale .ifo-body .details .details-title h6 {
-  font-family: khandsemibold;
-  font-size: 20px;
-  color: #ffffff;
-  margin: 0;
+    font-family: khandsemibold;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0;
 }
 
 .ifoinitalsale .ifo-body .details .details-content {
-  padding-left: 61px;
-  padding-top: 26px;
-  padding-bottom: 10px;
-  padding-right: 31px;
-  border: solid 2px #d9ebe9;
-  border-top: none;
+    padding-left: 61px;
+    padding-top: 26px;
+    padding-bottom: 10px;
+    padding-right: 31px;
+    border: solid 2px #d9ebe9;
+    border-top: none;
 }
 
 .ifoinitalsale .ifo-body .details .details-content .tab-item {
-  margin-bottom: 26px;
+    margin-bottom: 26px;
 }
 
 .ifoinitalsale .ifo-body .details .details-content .tab-item .tab-title {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .ifoinitalsale .ifo-body .details .details-content .tab-item .tab-title .active-icon {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .ifoinitalsale .ifo-body .details .details-content .tab-item .tab-title i {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  font-size: 18px;
-  color: #0c907e;
-  left: -22px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    color: #0c907e;
+    left: -22px;
 }
 
 .ifoinitalsale .ifo-body .details .details-content .tab-item .tab-title h6 {
-  font-family: khandsemibold;
-  font-size: 20px;
-  color: #0c907e;
-  margin: 0;
+    font-family: khandsemibold;
+    font-size: 20px;
+    color: #0c907e;
+    margin: 0;
 }
 
 .ifoinitalsale .ifo-body .details .details-content .active-tab {
-  max-height: 400px !important;
+    max-height: 400px !important;
 }
 
 .ifoinitalsale .ifo-body .details .details-content .tab-content {
-  overflow: hidden;
-  max-height: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .ifoinitalsale .ifo-body .details .details-content .tab-content p {
-  margin-top: 8px;
-  margin-bottom: 0;
-  padding-right: 40px;
-  font-family: khandregular;
-  font-size: 20px;
-  color: #303c3f;
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding-right: 40px;
+    font-family: khandregular;
+    font-size: 20px;
+    color: #303c3f;
 }
 
 .ifoinitalsale .ifo-body .bottom-img {
-  margin-top: 100px;
-  background-image: url(/Assets/img/calloptionsPhotos/call-option-bottom.png);
-  background-size: 700px;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 400px;
-  background-position: 50% 0;
+    margin-top: 100px;
+    background-image: url(../img/calloptionsPhotos/call-option-bottom.png);
+    background-size: 700px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    background-position: 50% 0;
 }
+
+
 /*# sourceMappingURL=calloption.css.map */
