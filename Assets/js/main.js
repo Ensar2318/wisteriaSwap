@@ -51,25 +51,41 @@ $(document).ready(function() {
 
         if ($(this).hasClass("active")) {
             $(this).removeClass("active").children(".right").removeClass("active-rotate").parent().next(".dropdown").removeClass("openedDropdown");
-            
+
         } else {
             $(".dropdown-ac-kapa").children(".right").removeClass("active-rotate");
             $(".dropdown-ac-kapa").removeClass("active");
             $(".dropdown-ac-kapa").next(".dropdown").removeClass("openedDropdown");
 
-           $(this).addClass("active").children(".right").addClass("active-rotate").parent().next(".dropdown").addClass("openedDropdown");
+            $(this).addClass("active").children(".right").addClass("active-rotate").parent().next(".dropdown").addClass("openedDropdown");
         }
 
 
     });
 
 
+    // Call Options Details Tab Bar Side
+
+    $(".details .tab-title").click(function(e) {
+        e.preventDefault();
+        console.log($(this).text());
+        if ($(this).next(".tab-content").hasClass("active-tab")) {
+            $(this).children("i").removeClass("active-icon").parent().next(".tab-content").removeClass("active-tab");
+        } else {
+            $(".details .tab-title i").removeClass("active-icon").parent().next(".tab-content").removeClass("active-tab");
+            $(this).children("i").addClass("active-icon").parent().next(".tab-content").addClass("active-tab");
+        }
+    });
+
+    // İnput range ayarlama kısmı bridge.html
+    $("#myRange").on("input change", function() {
+        $("#rangeCount").text($(this).val());
+    });
 
 
 
 
-
-    // Swipper js kodları
+    // Swipper js kodları index.html
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -93,6 +109,37 @@ $(document).ready(function() {
             },
         }
     });
+
+    // Bridge html swipper js kodları
+    var swiper = new Swiper(".bridge-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".bridge-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".bridge-button-next",
+            prevEl: ".bridge-button-prev",
+        },
+    });
+
+    // Sayfa indiginde calısan kod
+    AOS.init({
+        duration: 2000,
+        once: true,
+    });
+
+
+    // bridge count
+
 
 
 });

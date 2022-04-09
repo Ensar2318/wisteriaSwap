@@ -1,7 +1,16 @@
 @import "variables.scss";
-
 //  <!-- ========== İfo inital side ========== -->
+body {
+    background-image: none;
+}
+
 .ifoinitalsale {
+    background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png), url(/Assets/img/HomePhotos/section-1-likerainbow.png), url(/Assets/img/calloptionsPhotos/icecream.png), url(/Assets/img/calloptionsPhotos/cube.png), url(/Assets/img/calloptionsPhotos/dama.png), url(/Assets/img/calloptionsPhotos/dots.png);
+    background-repeat: no-repeat;
+    background-size: 1879px, 73%, 280px, 300px, 220px, 150px;
+    background-position: 313px -58px, -588px 85px, 88% 760px, 25% 1200px, 77% 1622px, 30% 1627px;
+    padding-top: 50px;
+    padding-bottom: 0;
     .ifo-body {
         h1 {
             font-size: 46px;
@@ -12,6 +21,16 @@
             font-size: 22px;
             color: $colorDefaultText;
             font-family: khandregular;
+        }
+        h4 {
+            @media (max-width: 1100px) {
+                margin-bottom: 40px;
+            }
+            margin-bottom: 120px;
+            margin-top: 66px;
+            font-size: 32px;
+            color: $colorDefaultText;
+            font-family: khandsemibold;
         }
         .ifo-buttons {
             margin-top: 20px;
@@ -25,7 +44,7 @@
                 border: none;
                 background: none;
                 transition: opacity 0.3s ease;
-                &:hover{
+                &:hover {
                     opacity: 0.8;
                 }
             }
@@ -35,11 +54,15 @@
             }
         }
         .ifo-card {
+            @media (max-width: $medium) {
+                padding: 40px;
+            }
             background-color: #e1f7f4;
             padding: 40px 90px;
             width: 70%;
             border-radius: 22px;
             margin-top: 30px;
+            border: solid 2px rgba(175, 175, 175, 0.16);
             h3 {
                 color: #0c907e;
                 margin: 12px;
@@ -52,6 +75,10 @@
                 font-family: khandregular;
             }
             button {
+                @media (max-width: 1100px) {
+                    padding: 10px 0;
+                    width: 100%;
+                }
                 padding: 10px 158px;
                 color: white;
                 background-color: #0c907e;
@@ -60,11 +87,163 @@
                 font-size: 16px;
                 border: none;
                 transition: opacity 0.3s ease;
-                &:hover{
+                &:hover {
                     opacity: 0.8;
                 }
-
             }
+        }
+        .other-margin-bottom {
+            @media (max-width: 1100px) {
+                margin-bottom: 40px;
+            }
+            margin-bottom: 162px;
+        }
+        .ifo-phase {
+            @media (max-width: 1100px) {
+                flex-direction: column;
+                align-items: center;
+            }
+            position: relative;
+            .left {
+                right: 119px;
+            }
+            .right {
+                left: 119px;
+            }
+            .custom-other-setting {
+                padding: 40px 34px !important;
+                top: calc(50% - 110px) !important;
+            }
+            .ellips {
+                @media (max-width: 1100px) {
+                    margin-bottom: 1rem;
+                }
+                width: 57px;
+                height: 57px;
+                border-radius: 40px;
+                background-color: #0c907e;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: khandmedium;
+                font-size: 34px;
+            }
+            .ellips-card {
+                @media (max-width: 1100px) {
+                    position: static;
+                }
+                @media (max-width: 500px) {
+                    width: 100%;
+                }
+                border: solid 2px rgba(175, 175, 175, 0.16);
+                background-color: #e1f7f4;
+                padding: 27px 34px;
+                border-radius: 22px;
+                width: 440px;
+                position: absolute;
+                top: calc(50% - 86px);
+                p {
+                    @media (max-width: 500px) {
+                        font-size: 16px
+                    }
+                    opacity: 0.8;
+                    font-family: khandregular;
+                    font-size: 20px;
+                    color: $colorDefaultText;
+                    margin: 0;
+                }
+                .my-card-title {
+                    display: flex;
+                    margin-bottom: 10px;
+                    align-items: center;
+                    h3 {
+                        @media (max-width: 500px) {
+                            font-size: 18px
+                        }
+                        color: #0c907e;
+                        margin: 0;
+                        margin-left: 10px;
+                        font-size: 26px;
+                        font-family: khandsemibold;
+                    }
+                }
+            }
+        }
+        .details {
+            @media (max-width: 1100px) {
+                margin-top: 80px;
+                width: 100%;
+            }
+            margin-top: 248px;
+            background-color: #e1f7f4;
+            border-radius: 18px;
+            width: 45%;
+            overflow: hidden;
+            .details-title {
+                background-color: #0c907e;
+                padding: 19px 24px;
+                h6 {
+                    font-family: khandsemibold;
+                    font-size: 20px;
+                    color: #ffffff;
+                    margin: 0;
+                }
+            }
+            .details-content {
+                padding-left: 61px;
+                padding-top: 26px;
+                padding-bottom: 10px;
+                padding-right: 31px;
+                border: solid 2px #d9ebe9;
+                border-top: none;
+                .tab-item {
+                    margin-bottom: 26px;
+                    .tab-title {
+                        .active-icon {
+                            transform: rotate(90deg);
+                        }
+                        cursor: pointer;
+                        i {
+                            transition: all 0.3s ease;
+                            font-size: 18px;
+                            color: #0c907e;
+                            left: -22px;
+                        }
+                        h6 {
+                            font-family: khandsemibold;
+                            font-size: 20px;
+                            color: #0c907e;
+                            margin: 0;
+                        }
+                    }
+                }
+                .active-tab {
+                    max-height: 400px !important;
+                }
+                .tab-content {
+                    overflow: hidden;
+                    max-height: 0;
+                    transition: all 0.3s ease;
+                    p {
+                        margin-top: 8px;
+                        margin-bottom: 0;
+                        padding-right: 40px;
+                        font-family: khandregular;
+                        font-size: 20px;
+                        color: $colorDefaultText;
+                    }
+                }
+            }
+        }
+        .bottom-img {
+            margin-top: 100px;
+            background-image: url(/Assets/img/calloptionsPhotos/call-option-bottom.png);
+            background-size: 700px;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 400px;
+            background-position: 50% 0;
         }
     }
 }

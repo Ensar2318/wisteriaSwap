@@ -107,7 +107,7 @@ body {
   width: 210px;
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
-  overflow: hidden;
+  overflow: auto;
   max-width: 210px;
 }
 
@@ -121,6 +121,18 @@ body {
   .header .left-navbar {
     top: 0;
   }
+}
+
+.header .left-navbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.header .left-navbar::-webkit-scrollbar-track {
+  background: white;
+}
+
+.header .left-navbar::-webkit-scrollbar-thumb {
+  background-color: #303c3f;
 }
 
 .header .left-navbar .kapsayici {
@@ -610,6 +622,7 @@ body {
 .partners .partners-items {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  font-size: 20px;
 }
 
 @media (max-width: 1200px) {

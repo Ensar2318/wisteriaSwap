@@ -239,8 +239,10 @@
     @media(max-width: 500px) {
         background-size: 140%;
     }
-    @media(max-width: 300px) {
-        background-size: 150%;
+    @media(max-width: 400px) {
+        background-size: 140%;
+        padding: 150px 0;
+        background-position: 70% 80px;
     }
     padding: 250px 0;
     background-image: url(/Assets/img/StakePhotos/btcada.png);

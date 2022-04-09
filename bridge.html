@@ -20,7 +20,7 @@
 
 </head>
 
-<body class="bg-stake">
+<body class="bg-bridge">
 
 
     <!-- ========== Header Side Start ========== -->
@@ -50,7 +50,8 @@
                         </div>
                     </li>
                     <li><a class="active" href="stake.html"><i class="fa-solid fa-lock"></i>Stake (3,3)</a></li>
-                    <li><a href="calloption.html"><i class="fa-solid fa-money-check-dollar"></i>Call Option (1,1)</a></li>
+                    <li><a href="calloption.html"><i class="fa-solid fa-money-check-dollar"></i>Call Option (1,1)</a>
+                    </li>
                     <li><a href="#"><i class="fa-solid fa-rocket"></i>IFO</a></li>
                     <li><a href="bridge.html"><i class="fa-solid fa-bitcoin-sign"></i>Bridge</a></li>
                     <li>
@@ -77,6 +78,123 @@
         <a id="openNav" class="open-nav" href="#" onclick="return false"><i class="fa-solid fa-angles-right"></i></a>
     </header>
     <!-- Header Side END -->
+
+    <!-- ======== Hour Glass Side ======== -->
+
+    <section class="hour-glass-side">
+        <div class="container">
+            <div class="hour-glass-logo d-flex flex-column align-items-center">
+                <img class="img-fluid hour-glass-png" src="Assets/img/BridgePhotos/hourglasslogo.png">
+                <h5 class="m-0">Hourglass</h5>
+                <h6 class="m-0">Estimate Your Returns</h6>
+            </div>
+
+            <div class="hour-glass-card mx-auto">
+                <div class="text-center glass-titles">
+                    <div class="glass-title-item">
+                        <h5>Current WST price</h5>
+                        <h6>$59.58</h6>
+                    </div>
+                    <div class="glass-title-item">
+                        <h5>Current Daily Reward</h5>
+                        <h6>$2.62%</h6>
+                    </div>
+                    <div class="glass-title-item">
+                        <h5>Your WST balance</h5>
+                        <h6>0.00</h6>
+                    </div>
+                </div>
+                <div class="glass-inputs">
+                    <div class="row">
+                        <div class="col-xl-6 padding-right vals">
+                            <h6>WST Amount</h6>
+                            <input type="text" name="wts" id="wst" placeholder="Max">
+                        </div>
+                        <div class="col-xl-6 mt-xl-0 mt-4 padding-left vals">
+                            <h6>WST Price at Purchase ($)</h6>
+                            <input type="text" name="wts" id="wst" placeholder="Current">
+                        </div>
+
+                        <div class="col-xl-6 mt-4 padding-right vals">
+                            <h6>Reward Yield(%)</h6>
+                            <input type="text" name="wts" id="wst" placeholder="Current">
+                        </div>
+                        <div class="col-xl-6 mt-4 padding-left vals">
+                            <h6>Future WST Market Price (+)</h6>
+                            <input type="text" name="wts" id="wst" placeholder="Current">
+                        </div>
+                        <div class="col-12 mt-4 slider-side">
+                            <input type="range" value="30" min="1" max="100" id="myRange">
+                            <h3 class="text-center"><span id="rangeCount">30</span> days</h3>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div style=" border-bottom: solid 2px #d9ebe9;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-content">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3>your Initial Investment</h3>
+                        <h2>$0.00</h2>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3>Current Wealth</h3>
+                        <h2>$0.00</h2>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3>WST Rewards Estimation</h3>
+                        <h2>0</h2>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3>Potential Return</h3>
+                        <h2>$0</h2>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center flex-wrap">
+                    <div class="bridge-button-prev"><i class="fa-solid fa-angle-left"></i></div>
+                    <div class="swiper bridge-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img class="img-fluid" src="Assets/img/BridgePhotos/macbook.png">
+                                    <div class="d-flex flex-column ms-4 justify-content-center">
+                                        <h5>0 Macbook</h5>
+                                        <h6>MacBook Pro M1</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img class="img-fluid" src="Assets/img/BridgePhotos/macbook.png">
+                                    <div class="d-flex flex-column ms-4 justify-content-center">
+                                        <h5>0 Macbook</h5>
+                                        <h6>MacBook Pro M2</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img class="img-fluid" src="Assets/img/BridgePhotos/macbook.png">
+                                    <div class="d-flex flex-column ms-4 justify-content-center">
+                                        <h5>0 Macbook</h5>
+                                        <h6>MacBook Pro M3</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="bridge-button-next"><i class="fa-solid fa-angle-right"></i></div>
+                    <div class="bridge-pagination"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Hour Glass Side END -->
 
 
     <!-- ========== Section Footer Side Start ========== -->

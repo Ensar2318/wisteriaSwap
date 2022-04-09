@@ -336,9 +336,11 @@
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   .bitcoin-png {
-    background-size: 150%;
+    background-size: 140%;
+    padding: 150px 0;
+    background-position: 70% 80px;
   }
 }
 /*# sourceMappingURL=stake.css.map */

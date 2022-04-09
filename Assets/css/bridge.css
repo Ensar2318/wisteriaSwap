@@ -27,4 +27,288 @@
   font-family: khandmedium;
   src: url(/Assets/Fonts/khand/Khandm.ttf);
 }
+
+.bg-bridge {
+  background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  width: 100%;
+  background-image: url(/Assets/img/HomePhotos/section-1-ourproductbg.png);
+  background-size: 1658px;
+  background-position: 90% -120px;
+}
+
+.hour-glass-side .hour-glass-logo .hour-glass-png {
+  width: 117px;
+}
+
+.hour-glass-side .hour-glass-logo h5 {
+  font-family: khandmedium;
+  color: #303c3f;
+  font-size: 46px;
+}
+
+.hour-glass-side .hour-glass-logo h6 {
+  font-family: khandregular;
+  color: #303c3f;
+  font-size: 22px;
+}
+
+.hour-glass-side .hour-glass-card {
+  background-color: #e1f7f4;
+  border: solid 2px #d9ebe9;
+  border-radius: 22px;
+  width: 850px;
+  padding: 50px;
+  margin-top: 18px;
+}
+
+@media (max-width: 1000px) {
+  .hour-glass-side .hour-glass-card {
+    width: 100%;
+  }
+}
+
+.hour-glass-side .hour-glass-card .glass-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: solid 2px #d9ebe9;
+  padding-bottom: 2px;
+}
+
+.hour-glass-side .hour-glass-card .glass-titles .glass-title-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hour-glass-side .hour-glass-card .glass-titles .glass-title-item h5,
+.hour-glass-side .hour-glass-card .glass-titles .glass-title-item h6 {
+  font-family: khandmedium;
+  color: #303c3f;
+  margin: 0;
+}
+
+.hour-glass-side .hour-glass-card .glass-titles .glass-title-item h5 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.hour-glass-side .hour-glass-card .glass-titles .glass-title-item h6 {
+  font-size: 27px;
+}
+
+.hour-glass-side .hour-glass-card .glass-inputs {
+  margin-top: 16px;
+}
+
+.hour-glass-side .hour-glass-card .glass-inputs h6 {
+  font-family: khandmedium;
+  font-size: 20px;
+  color: #303c3f;
+}
+
+.hour-glass-side .hour-glass-card .glass-inputs .padding-right {
+  padding-right: 41px;
+}
+
+@media (max-width: 1200px) {
+  .hour-glass-side .hour-glass-card .glass-inputs .padding-right {
+    padding: 0;
+  }
+}
+
+.hour-glass-side .hour-glass-card .glass-inputs .padding-left {
+  padding-left: 41px;
+}
+
+@media (max-width: 1200px) {
+  .hour-glass-side .hour-glass-card .glass-inputs .padding-left {
+    padding: 0;
+  }
+}
+
+.hour-glass-side .hour-glass-card .glass-inputs .vals input {
+  width: 100%;
+  border-radius: 9px;
+  border: solid 3px #14907e;
+  background: none;
+  height: 50px;
+  color: #303c3f;
+  font-family: khandmedium;
+  font-size: 24px;
+  padding-left: 18px;
+  outline: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.hour-glass-side .hour-glass-card .glass-inputs .vals input:focus {
+  border: solid 3px #14907d8c;
+}
+
+.hour-glass-side .hour-glass-card .glass-inputs .vals input::-webkit-input-placeholder {
+  text-align: right;
+  padding-right: 18px;
+  color: #0c907e;
+}
+
+.hour-glass-side .hour-glass-card .glass-inputs .vals input:-ms-input-placeholder {
+  text-align: right;
+  padding-right: 18px;
+  color: #0c907e;
+}
+
+.hour-glass-side .hour-glass-card .glass-inputs .vals input::-ms-input-placeholder {
+  text-align: right;
+  padding-right: 18px;
+  color: #0c907e;
+}
+
+.hour-glass-side .hour-glass-card .glass-inputs .vals input::placeholder {
+  text-align: right;
+  padding-right: 18px;
+  color: #0c907e;
+}
+
+.hour-glass-side .hour-glass-card .glass-inputs .slider-side {
+  padding: 0 40px;
+}
+
+.hour-glass-side .hour-glass-card .glass-inputs .slider-side input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 30px;
+  background: #0c907e;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  margin-bottom: 24px;
+}
+
+.hour-glass-side .hour-glass-card .glass-inputs .slider-side input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: solid 3px #e1f7f4;
+  background-color: #25e2c9;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.hour-glass-side .hour-glass-card .glass-inputs .slider-side h3 {
+  font-family: khandmedium;
+  font-size: 30px;
+  color: #303c3f;
+}
+
+.hour-glass-side .hour-glass-card .glass-content {
+  margin-bottom: 54px;
+}
+
+.hour-glass-side .hour-glass-card .glass-content h2,
+.hour-glass-side .hour-glass-card .glass-content h3 {
+  font-family: khandmedium;
+  color: #303c3f;
+  margin: 0;
+}
+
+.hour-glass-side .hour-glass-card .glass-content h2 {
+  font-size: 28px;
+}
+
+.hour-glass-side .hour-glass-card .glass-content h3 {
+  font-size: 22px;
+}
+
+.hour-glass-side .hour-glass-card .bridge-swiper {
+  width: 50%;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .hour-glass-side .hour-glass-card .bridge-swiper {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hour-glass-side .hour-glass-card .bridge-swiper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 450px) {
+  .hour-glass-side .hour-glass-card .bridge-swiper {
+    width: 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 20px;
+  }
+}
+
+.hour-glass-side .hour-glass-card .bridge-swiper .swiper-slide img {
+  width: 70px;
+}
+
+.hour-glass-side .hour-glass-card .bridge-swiper .swiper-slide h5 {
+  color: #303c3f;
+  font-family: khandmedium;
+  font-size: 22px;
+}
+
+.hour-glass-side .hour-glass-card .bridge-swiper .swiper-slide h6 {
+  color: #303c3f;
+  font-family: khandsemibold;
+  font-size: 20px;
+  margin: 0;
+}
+
+.hour-glass-side .hour-glass-card .bridge-button-next,
+.hour-glass-side .hour-glass-card .bridge-button-prev {
+  width: 24px;
+  height: 24px;
+  background-color: #add9d3;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 450px) {
+  .hour-glass-side .hour-glass-card .bridge-button-next,
+  .hour-glass-side .hour-glass-card .bridge-button-prev {
+    margin: 0 1rem;
+  }
+}
+
+.hour-glass-side .hour-glass-card .bridge-pagination {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hour-glass-side .hour-glass-card .bridge-pagination .swiper-pagination-bullet {
+  background-color: #303c3f;
+  width: 10px;
+  height: 10px;
+}
 /*# sourceMappingURL=bridge.css.map */

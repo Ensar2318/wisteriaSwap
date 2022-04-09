@@ -1,1 +1,206 @@
 @import "variables.scss";
+// <!-- ======== Hour Glass Side ======== -->
+.bg-bridge {
+    background-image: url(/Assets/img/HomePhotos/Section-1-mainbg.png);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    width: 100%;
+    background-image: url(/Assets/img/HomePhotos/section-1-ourproductbg.png);
+    background-size: 1658px;
+    background-position: 90% -120px;
+}
+
+.hour-glass-side {
+    .hour-glass-logo {
+        .hour-glass-png {
+            width: 117px;
+        }
+        h5 {
+            font-family: khandmedium;
+            color: $colorDefaultText;
+            font-size: 46px;
+        }
+        h6 {
+            font-family: khandregular;
+            color: $colorDefaultText;
+            font-size: 22px;
+        }
+    }
+    .hour-glass-card {
+        @media (max-width: 1000px) {
+            width: 100%;
+        }
+        background-color: #e1f7f4;
+        border: solid 2px #d9ebe9;
+        border-radius: 22px;
+        width: 850px;
+        padding: 50px;
+        margin-top: 18px;
+        .glass-titles {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: solid 2px #d9ebe9;
+            padding-bottom: 2px;
+            .glass-title-item {
+                display: flex;
+                flex-direction: column;
+                h5,
+                h6 {
+                    font-family: khandmedium;
+                    color: $colorDefaultText;
+                    margin: 0;
+                }
+                h5 {
+                    font-size: 22px;
+                    margin-bottom: 4px;
+                }
+                h6 {
+                    font-size: 27px;
+                }
+            }
+        }
+        .glass-inputs {
+            margin-top: 16px;
+            h6 {
+                font-family: khandmedium;
+                font-size: 20px;
+                color: $colorDefaultText;
+            }
+            .padding-right {
+                @media (max-width: $xlarge) {
+                    padding: 0;
+                }
+                padding-right: 41px;
+            }
+            .padding-left {
+                @media (max-width: $xlarge) {
+                    padding: 0;
+                }
+                padding-left: 41px;
+            }
+            .vals {
+                input {
+                    width: 100%;
+                    border-radius: 9px;
+                    border: solid 3px #14907e;
+                    background: none;
+                    height: 50px;
+                    color: $colorDefaultText;
+                    font-family: khandmedium;
+                    font-size: 24px;
+                    padding-left: 18px;
+                    outline: none;
+                    transition: all 0.3s ease;
+                    &:focus {
+                        border: solid 3px #14907d8c;
+                    }
+                    &::placeholder {
+                        text-align: right;
+                        padding-right: 18px;
+                        color: #0c907e;
+                    }
+                }
+            }
+            .slider-side {
+                padding: 0 40px;
+                input {
+                    -webkit-appearance: none;
+                    width: 100%;
+                    height: 5px;
+                    border-radius: 30px;
+                    background: #0c907e;
+                    outline: none;
+                    opacity: 0.7;
+                    -webkit-transition: 0.2s;
+                    transition: opacity 0.2s;
+                    margin-bottom: 24px;
+                    &::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        appearance: none;
+                        width: 20px;
+                        height: 20px;
+                        border: solid 3px #e1f7f4;
+                        background-color: #25e2c9;
+                        border-radius: 30px;
+                        cursor: pointer;
+                    }
+                }
+                h3 {
+                    font-family: khandmedium;
+                    font-size: 30px;
+                    color: $colorDefaultText;
+                }
+            }
+        }
+        .glass-content {
+            margin-bottom: 54px;
+            h2,
+            h3 {
+                font-family: khandmedium;
+                color: $colorDefaultText;
+                margin: 0;
+            }
+            h2 {
+                font-size: 28px;
+            }
+            h3 {
+                font-size: 22px;
+            }
+        }
+        .bridge-swiper {
+            @media (max-width: 800px) {
+                width: 60%;
+            }
+            @media (max-width: 600px) {
+                width: 80%;
+            }
+            @media (max-width: 450px) {
+                width: 100%;
+                order: -1;
+                margin-bottom: 20px;
+            }
+            width: 50%;
+            margin: 0;
+            .swiper-slide {
+                img {
+                    width: 70px;
+                }
+                h5 {
+                    color: $colorDefaultText;
+                    font-family: khandmedium;
+                    font-size: 22px;
+                }
+                h6 {
+                    color: $colorDefaultText;
+                    font-family: khandsemibold;
+                    font-size: 20px;
+                    margin: 0;
+                }
+            }
+        }
+        .bridge-button-next,
+        .bridge-button-prev {
+            @media (max-width: 450px) {
+                margin: 0 1rem;
+            }
+            width: 24px;
+            height: 24px;
+            background-color: #add9d3;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bridge-pagination {
+            text-align: center;
+            margin-top: 30px;
+            .swiper-pagination-bullet {
+                background-color: $colorDefaultText;
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+}
+
+// <!-- Hour Glass Side END -->

@@ -123,8 +123,17 @@ body {
         border-bottom-right-radius: 20px;
         width: 210px;
         transition: all ease 0.2s;
-        overflow: hidden;
+        overflow: auto;
         max-width: 210px;
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+        &::-webkit-scrollbar-track {
+            background: white;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $colorDefaultText;
+        }
         .kapsayici {
             padding: 24px 18px;
             height: 100%;
@@ -504,6 +513,7 @@ body {
     }
     .partners-items {
         flex-wrap: wrap;
+        font-size: 20px;
         @media (max-width: $xlarge) {
             justify-content: center;
         }
